@@ -1,0 +1,1815 @@
+-- Journal begins at Sun 2022-08-07 21:25:09 +08, ends at Sat 2023-02-25 21:17:43 +08. --
+Feb 25 12:07:16 potato kernel: Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
+Feb 25 12:07:16 potato kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-21-amd64 root=UUID=ea892f99-2d8b-4d95-ac33-5f2e577d709d ro quiet
+Feb 25 12:07:16 potato kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Feb 25 12:07:16 potato kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Feb 25 12:07:16 potato kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Feb 25 12:07:16 potato kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Feb 25 12:07:16 potato kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Feb 25 12:07:16 potato kernel: BIOS-provided physical RAM map:
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000000100000-0x000000001fffffff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000020000000-0x00000000201fffff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000020200000-0x000000003fffffff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000040000000-0x00000000401fffff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000040200000-0x00000000caa22fff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000caa23000-0x00000000caa66fff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000caa67000-0x00000000cad52fff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000cad53000-0x00000000cad8cfff] type 20
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000cad8d000-0x00000000cade6fff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000cade7000-0x00000000cafe6fff] ACPI NVS
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000cafe7000-0x00000000caffefff] ACPI data
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000cafff000-0x00000000caffffff] usable
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x00000000ffc00000-0x00000000ffc1ffff] reserved
+Feb 25 12:07:16 potato kernel: BIOS-e820: [mem 0x0000000100000000-0x000000022dffffff] usable
+Feb 25 12:07:16 potato kernel: NX (Execute Disable) protection: active
+Feb 25 12:07:16 potato kernel: efi: EFI v2.00 by American Megatrends
+Feb 25 12:07:16 potato kernel: efi: ACPI 2.0=0xcaffef98 SMBIOS=0xcada4f98 MOKvar=0xc7215000 
+Feb 25 12:07:16 potato kernel: secureboot: Secure boot disabled
+Feb 25 12:07:16 potato kernel: SMBIOS 2.6 present.
+Feb 25 12:07:16 potato kernel: DMI: Dell Inc. Latitude XT3/00XHM8, BIOS A14 05/12/2017
+Feb 25 12:07:16 potato kernel: tsc: Fast TSC calibration using PIT
+Feb 25 12:07:16 potato kernel: tsc: Detected 2194.960 MHz processor
+Feb 25 12:07:16 potato kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Feb 25 12:07:16 potato kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Feb 25 12:07:16 potato kernel: last_pfn = 0x22e000 max_arch_pfn = 0x400000000
+Feb 25 12:07:16 potato kernel: MTRR default type: uncachable
+Feb 25 12:07:16 potato kernel: MTRR fixed ranges enabled:
+Feb 25 12:07:16 potato kernel:   00000-9FFFF write-back
+Feb 25 12:07:16 potato kernel:   A0000-BFFFF uncachable
+Feb 25 12:07:16 potato kernel:   C0000-FFFFF write-protect
+Feb 25 12:07:16 potato kernel: MTRR variable ranges enabled:
+Feb 25 12:07:16 potato kernel:   0 base 000000000 mask F80000000 write-back
+Feb 25 12:07:16 potato kernel:   1 base 080000000 mask FC0000000 write-back
+Feb 25 12:07:16 potato kernel:   2 base 0C0000000 mask FF8000000 write-back
+Feb 25 12:07:16 potato kernel:   3 base 0C8000000 mask FFC000000 write-back
+Feb 25 12:07:16 potato kernel:   4 base 0CB000000 mask FFF000000 uncachable
+Feb 25 12:07:16 potato kernel:   5 base 100000000 mask F00000000 write-back
+Feb 25 12:07:16 potato kernel:   6 base 200000000 mask FE0000000 write-back
+Feb 25 12:07:16 potato kernel:   7 base 220000000 mask FF0000000 write-back
+Feb 25 12:07:16 potato kernel:   8 base 22E000000 mask FFE000000 uncachable
+Feb 25 12:07:16 potato kernel:   9 disabled
+Feb 25 12:07:16 potato kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Feb 25 12:07:16 potato kernel: e820: update [mem 0xcb000000-0xffffffff] usable ==> reserved
+Feb 25 12:07:16 potato kernel: last_pfn = 0xcb000 max_arch_pfn = 0x400000000
+Feb 25 12:07:16 potato kernel: found SMP MP-table at [mem 0x000f1f40-0x000f1f4f]
+Feb 25 12:07:16 potato kernel: e820: update [mem 0xc7215000-0xc7217fff] usable ==> reserved
+Feb 25 12:07:16 potato kernel: reserving inaccessible SNB gfx pages
+Feb 25 12:07:16 potato kernel: RAMDISK: [mem 0x34817000-0x36402fff]
+Feb 25 12:07:16 potato kernel: ACPI: Early table checksum verification disabled
+Feb 25 12:07:16 potato kernel: ACPI: RSDP 0x00000000CAFFEF98 000024 (v02 DELL  )
+Feb 25 12:07:16 potato kernel: ACPI: XSDT 0x00000000CAFFDE18 000074 (v01 DELL   CBX3     06222004 MSFT 00010013)
+Feb 25 12:07:16 potato kernel: ACPI: FACP 0x00000000CAF87D98 0000F4 (v04 DELL   CBX3     06222004 MSFT 00010013)
+Feb 25 12:07:16 potato kernel: ACPI: DSDT 0x00000000CAF66018 0084D2 (v02 INT430 SYSFexxx 00001001 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: FACS 0x00000000CAFE4E40 000040
+Feb 25 12:07:16 potato kernel: ACPI: FACS 0x00000000CAFE4D40 000040
+Feb 25 12:07:16 potato kernel: ACPI: APIC 0x00000000CAFFCF18 0000CC (v02 DELL   CBX3     06222004 MSFT 00010013)
+Feb 25 12:07:16 potato kernel: ACPI: TCPA 0x00000000CAFE5D18 000032 (v02                 00000000      00000000)
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0x00000000CAF88A98 0002F9 (v01 DELLTP TPM      00003000 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: MCFG 0x00000000CAFE5C98 00003C (v01 DELL   SNDYBRDG 06222004 MSFT 00000097)
+Feb 25 12:07:16 potato kernel: ACPI: HPET 0x00000000CAFE5C18 000038 (v01 A M I   PCHHPET 06222004 AMI. 00000003)
+Feb 25 12:07:16 potato kernel: ACPI: BOOT 0x00000000CAFE5B98 000028 (v01 DELL   CBX3     06222004 AMI  00010013)
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0x00000000CAF7D018 00094E (v01 PmRef  Cpu0Ist  00003000 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0x00000000CAF7C018 000996 (v01 PmRef  CpuPm    00003000 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: SLIC 0x00000000CAF86C18 000176 (v03 DELL   CBX3     06222004 MSFT 00010013)
+Feb 25 12:07:16 potato kernel: ACPI: Reserving FACP table memory at [mem 0xcaf87d98-0xcaf87e8b]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving DSDT table memory at [mem 0xcaf66018-0xcaf6e4e9]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving FACS table memory at [mem 0xcafe4e40-0xcafe4e7f]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving FACS table memory at [mem 0xcafe4d40-0xcafe4d7f]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving APIC table memory at [mem 0xcaffcf18-0xcaffcfe3]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving TCPA table memory at [mem 0xcafe5d18-0xcafe5d49]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving SSDT table memory at [mem 0xcaf88a98-0xcaf88d90]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving MCFG table memory at [mem 0xcafe5c98-0xcafe5cd3]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving HPET table memory at [mem 0xcafe5c18-0xcafe5c4f]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving BOOT table memory at [mem 0xcafe5b98-0xcafe5bbf]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving SSDT table memory at [mem 0xcaf7d018-0xcaf7d965]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving SSDT table memory at [mem 0xcaf7c018-0xcaf7c9ad]
+Feb 25 12:07:16 potato kernel: ACPI: Reserving SLIC table memory at [mem 0xcaf86c18-0xcaf86d8d]
+Feb 25 12:07:16 potato kernel: ACPI: Local APIC address 0xfee00000
+Feb 25 12:07:16 potato kernel: No NUMA configuration found
+Feb 25 12:07:16 potato kernel: Faking a node at [mem 0x0000000000000000-0x000000022dffffff]
+Feb 25 12:07:16 potato kernel: NODE_DATA(0) allocated [mem 0x22dfd2000-0x22dffbfff]
+Feb 25 12:07:16 potato kernel: Zone ranges:
+Feb 25 12:07:16 potato kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Feb 25 12:07:16 potato kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Feb 25 12:07:16 potato kernel:   Normal   [mem 0x0000000100000000-0x000000022dffffff]
+Feb 25 12:07:16 potato kernel:   Device   empty
+Feb 25 12:07:16 potato kernel: Movable zone start for each node
+Feb 25 12:07:16 potato kernel: Early memory node ranges
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x0000000000100000-0x000000001fffffff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x0000000020200000-0x000000003fffffff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x0000000040200000-0x00000000caa22fff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x00000000caa67000-0x00000000cad52fff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x00000000cafff000-0x00000000caffffff]
+Feb 25 12:07:16 potato kernel:   node   0: [mem 0x0000000100000000-0x000000022dffffff]
+Feb 25 12:07:16 potato kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000022dffffff]
+Feb 25 12:07:16 potato kernel: On node 0 totalpages: 2066607
+Feb 25 12:07:16 potato kernel:   DMA zone: 64 pages used for memmap
+Feb 25 12:07:16 potato kernel:   DMA zone: 159 pages reserved
+Feb 25 12:07:16 potato kernel:   DMA zone: 3999 pages, LIFO batch:0
+Feb 25 12:07:16 potato kernel:   DMA32 zone: 12901 pages used for memmap
+Feb 25 12:07:16 potato kernel:   DMA32 zone: 825616 pages, LIFO batch:63
+Feb 25 12:07:16 potato kernel:   Normal zone: 19328 pages used for memmap
+Feb 25 12:07:16 potato kernel:   Normal zone: 1236992 pages, LIFO batch:63
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA32: 512 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA32: 512 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA32: 68 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone DMA32: 684 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone Normal: 20480 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: On node 0, zone Normal: 8192 pages in unavailable ranges
+Feb 25 12:07:16 potato kernel: Reserving Intel graphics memory at [mem 0xcba00000-0xcf9fffff]
+Feb 25 12:07:16 potato kernel: ACPI: PM-Timer IO Port: 0x408
+Feb 25 12:07:16 potato kernel: ACPI: Local APIC address 0xfee00000
+Feb 25 12:07:16 potato kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+Feb 25 12:07:16 potato kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Feb 25 12:07:16 potato kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Feb 25 12:07:16 potato kernel: ACPI: IRQ0 used by override.
+Feb 25 12:07:16 potato kernel: ACPI: IRQ9 used by override.
+Feb 25 12:07:16 potato kernel: Using ACPI (MADT) for SMP configuration information
+Feb 25 12:07:16 potato kernel: ACPI: HPET id: 0x8086a701 base: 0xfed00000
+Feb 25 12:07:16 potato kernel: TSC deadline timer available
+Feb 25 12:07:16 potato kernel: smpboot: Allowing 16 CPUs, 12 hotplug CPUs
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0x20000000-0x201fffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0x40000000-0x401fffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xc7215000-0xc7217fff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcaa23000-0xcaa66fff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcad53000-0xcad8cfff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcad8d000-0xcade6fff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcade7000-0xcafe6fff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcafe7000-0xcaffefff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcb000000-0xcb9fffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcba00000-0xcf9fffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xcfa00000-0xfed1bfff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xfed1c000-0xfed1ffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xffbfffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xffc00000-0xffc1ffff]
+Feb 25 12:07:16 potato kernel: PM: hibernation: Registered nosave memory: [mem 0xffc20000-0xffffffff]
+Feb 25 12:07:16 potato kernel: [mem 0xcfa00000-0xfed1bfff] available for PCI devices
+Feb 25 12:07:16 potato kernel: Booting paravirtualized kernel on bare hardware
+Feb 25 12:07:16 potato kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Feb 25 12:07:16 potato kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+Feb 25 12:07:16 potato kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+Feb 25 12:07:16 potato kernel: pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+Feb 25 12:07:16 potato kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+Feb 25 12:07:16 potato kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2034155
+Feb 25 12:07:16 potato kernel: Policy zone: Normal
+Feb 25 12:07:16 potato kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-21-amd64 root=UUID=ea892f99-2d8b-4d95-ac33-5f2e577d709d ro quiet
+Feb 25 12:07:16 potato kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Feb 25 12:07:16 potato kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Feb 25 12:07:16 potato kernel: mem auto-init: stack:off, heap alloc:on, heap free:off
+Feb 25 12:07:16 potato kernel: Memory: 3256684K/8266428K available (12295K kernel code, 2537K rwdata, 7560K rodata, 2660K init, 5468K bss, 340624K reserved, 0K cma-reserved)
+Feb 25 12:07:16 potato kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+Feb 25 12:07:16 potato kernel: Kernel/User page tables isolation: enabled
+Feb 25 12:07:16 potato kernel: ftrace: allocating 36545 entries in 143 pages
+Feb 25 12:07:16 potato kernel: ftrace: allocated 143 pages with 5 groups
+Feb 25 12:07:16 potato kernel: rcu: Hierarchical RCU implementation.
+Feb 25 12:07:16 potato kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+Feb 25 12:07:16 potato kernel:         Rude variant of Tasks RCU enabled.
+Feb 25 12:07:16 potato kernel:         Tracing variant of Tasks RCU enabled.
+Feb 25 12:07:16 potato kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Feb 25 12:07:16 potato kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+Feb 25 12:07:16 potato kernel: NR_IRQS: 524544, nr_irqs: 552, preallocated irqs: 16
+Feb 25 12:07:16 potato kernel: Console: colour dummy device 80x25
+Feb 25 12:07:16 potato kernel: printk: console [tty0] enabled
+Feb 25 12:07:16 potato kernel: ACPI: Core revision 20200925
+Feb 25 12:07:16 potato kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+Feb 25 12:07:16 potato kernel: APIC: Switch to symmetric I/O mode setup
+Feb 25 12:07:16 potato kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+Feb 25 12:07:16 potato kernel: Switched APIC routing to physical flat.
+Feb 25 12:07:16 potato kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Feb 25 12:07:16 potato kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fa399d7d70, max_idle_ns: 440795316542 ns
+Feb 25 12:07:16 potato kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4389.92 BogoMIPS (lpj=8779840)
+Feb 25 12:07:16 potato kernel: pid_max: default: 32768 minimum: 301
+Feb 25 12:07:16 potato kernel: LSM: Security Framework initializing
+Feb 25 12:07:16 potato kernel: Yama: disabled by default; enable with sysctl kernel.yama.*
+Feb 25 12:07:16 potato kernel: AppArmor: AppArmor initialized
+Feb 25 12:07:16 potato kernel: TOMOYO Linux initialized
+Feb 25 12:07:16 potato kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Feb 25 12:07:16 potato kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Feb 25 12:07:16 potato kernel: mce: CPU0: Thermal monitoring enabled (TM1)
+Feb 25 12:07:16 potato kernel: process: using mwait in idle threads
+Feb 25 12:07:16 potato kernel: Last level iTLB entries: 4KB 512, 2MB 8, 4MB 8
+Feb 25 12:07:16 potato kernel: Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+Feb 25 12:07:16 potato kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Feb 25 12:07:16 potato kernel: Spectre V2 : Mitigation: Retpolines
+Feb 25 12:07:16 potato kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Feb 25 12:07:16 potato kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+Feb 25 12:07:16 potato kernel: Speculative Store Bypass: Vulnerable
+Feb 25 12:07:16 potato kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Feb 25 12:07:16 potato kernel: MMIO Stale Data: Unknown: No mitigations
+Feb 25 12:07:16 potato kernel: Freeing SMP alternatives memory: 32K
+Feb 25 12:07:16 potato kernel: smpboot: CPU0: Intel(R) Core(TM) i3-2330M CPU @ 2.20GHz (family: 0x6, model: 0x2a, stepping: 0x7)
+Feb 25 12:07:16 potato kernel: Performance Events: PEBS fmt1+, SandyBridge events, 16-deep LBR, full-width counters, Intel PMU driver.
+Feb 25 12:07:16 potato kernel: ... version:                3
+Feb 25 12:07:16 potato kernel: ... bit width:              48
+Feb 25 12:07:16 potato kernel: ... generic registers:      4
+Feb 25 12:07:16 potato kernel: ... value mask:             0000ffffffffffff
+Feb 25 12:07:16 potato kernel: ... max period:             00007fffffffffff
+Feb 25 12:07:16 potato kernel: ... fixed-purpose events:   3
+Feb 25 12:07:16 potato kernel: ... event mask:             000000070000000f
+Feb 25 12:07:16 potato kernel: rcu: Hierarchical SRCU implementation.
+Feb 25 12:07:16 potato kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Feb 25 12:07:16 potato kernel: smp: Bringing up secondary CPUs ...
+Feb 25 12:07:16 potato kernel: x86: Booting SMP configuration:
+Feb 25 12:07:16 potato kernel: .... node  #0, CPUs:        #1  #2
+Feb 25 12:07:16 potato kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Feb 25 12:07:16 potato kernel:   #3
+Feb 25 12:07:16 potato kernel: smp: Brought up 1 node, 4 CPUs
+Feb 25 12:07:16 potato kernel: smpboot: Max logical packages: 4
+Feb 25 12:07:16 potato kernel: smpboot: Total of 4 processors activated (17559.68 BogoMIPS)
+Feb 25 12:07:16 potato kernel: node 0 deferred pages initialised in 12ms
+Feb 25 12:07:16 potato kernel: devtmpfs: initialized
+Feb 25 12:07:16 potato kernel: x86/mm: Memory block size: 128MB
+Feb 25 12:07:16 potato kernel: PM: Registering ACPI NVS region [mem 0xcade7000-0xcafe6fff] (2097152 bytes)
+Feb 25 12:07:16 potato kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Feb 25 12:07:16 potato kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Feb 25 12:07:16 potato kernel: pinctrl core: initialized pinctrl subsystem
+Feb 25 12:07:16 potato kernel: NET: Registered protocol family 16
+Feb 25 12:07:16 potato kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Feb 25 12:07:16 potato kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Feb 25 12:07:16 potato kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Feb 25 12:07:16 potato kernel: audit: initializing netlink subsys (disabled)
+Feb 25 12:07:16 potato kernel: audit: type=2000 audit(1677298031.080:1): state=initialized audit_enabled=0 res=1
+Feb 25 12:07:16 potato kernel: thermal_sys: Registered thermal governor 'fair_share'
+Feb 25 12:07:16 potato kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Feb 25 12:07:16 potato kernel: thermal_sys: Registered thermal governor 'step_wise'
+Feb 25 12:07:16 potato kernel: thermal_sys: Registered thermal governor 'user_space'
+Feb 25 12:07:16 potato kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Feb 25 12:07:16 potato kernel: cpuidle: using governor ladder
+Feb 25 12:07:16 potato kernel: cpuidle: using governor menu
+Feb 25 12:07:16 potato kernel: Simple Boot Flag at 0xf3 set to 0x80
+Feb 25 12:07:16 potato kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Feb 25 12:07:16 potato kernel: ACPI: bus type PCI registered
+Feb 25 12:07:16 potato kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Feb 25 12:07:16 potato kernel: PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+Feb 25 12:07:16 potato kernel: PCI: not using MMCONFIG
+Feb 25 12:07:16 potato kernel: PCI: Using configuration type 1 for base access
+Feb 25 12:07:16 potato kernel: core: PMU erratum BJ122, BV98, HSD29 worked around, HT is on
+Feb 25 12:07:16 potato kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Feb 25 12:07:16 potato kernel: Kprobes globally optimized
+Feb 25 12:07:16 potato kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Module Device)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Processor Device)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Linux-Dell-Video)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Feb 25 12:07:16 potato kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Feb 25 12:07:16 potato kernel: ACPI: 4 ACPI AML tables successfully acquired and loaded
+Feb 25 12:07:16 potato kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Feb 25 12:07:16 potato kernel: ACPI: Dynamic OEM Table Load:
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0xFFFF8C6880E95000 000727 (v01 PmRef  Cpu0Cst  00003001 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: Dynamic OEM Table Load:
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0xFFFF8C6880B24C00 000303 (v01 PmRef  ApIst    00003000 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: Dynamic OEM Table Load:
+Feb 25 12:07:16 potato kernel: ACPI: SSDT 0xFFFF8C6880BE6A00 000119 (v01 PmRef  ApCst    00003000 INTL 20090903)
+Feb 25 12:07:16 potato kernel: ACPI: EC: EC started
+Feb 25 12:07:16 potato kernel: ACPI: EC: interrupt blocked
+Feb 25 12:07:16 potato kernel: ACPI: EC: EC_CMD/EC_SC=0x934, EC_DATA=0x930
+Feb 25 12:07:16 potato kernel: ACPI: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC used to handle transactions
+Feb 25 12:07:16 potato kernel: ACPI: Interpreter enabled
+Feb 25 12:07:16 potato kernel: ACPI: (supports S0 S3 S4 S5)
+Feb 25 12:07:16 potato kernel: ACPI: Using IOAPIC for interrupt routing
+Feb 25 12:07:16 potato kernel: PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+Feb 25 12:07:16 potato kernel: PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in ACPI motherboard resources
+Feb 25 12:07:16 potato kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Feb 25 12:07:16 potato kernel: ACPI: Enabled 5 GPEs in block 00 to 3F
+Feb 25 12:07:16 potato kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+Feb 25 12:07:16 potato kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+Feb 25 12:07:16 potato kernel: acpi PNP0A08:00: _OSC failed (AE_ERROR); disabling ASPM
+Feb 25 12:07:16 potato kernel: PCI host bridge to bus 0000:00
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [mem 0xcfa00000-0xfeafffff window]
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [mem 0xfed40000-0xfed44fff window]
+Feb 25 12:07:16 potato kernel: pci_bus 0000:00: root bus resource [bus 00-3e]
+Feb 25 12:07:16 potato kernel: pci 0000:00:00.0: [8086:0104] type 00 class 0x060000
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: [8086:0116] type 00 class 0x030000
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: reg 0x10: [mem 0xe0c00000-0xe0ffffff 64bit]
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: reg 0x18: [mem 0xd0000000-0xdfffffff 64bit pref]
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+Feb 25 12:07:17 potato kernel: pci 0000:00:16.0: [8086:1c3a] type 00 class 0x078000
+Feb 25 12:07:17 potato kernel: pci 0000:00:16.0: reg 0x10: [mem 0xe1cb0000-0xe1cb000f 64bit]
+Feb 25 12:07:17 potato kernel: pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:19.0: [8086:1502] type 00 class 0x020000
+Feb 25 12:07:17 potato kernel: pci 0000:00:19.0: reg 0x10: [mem 0xe1c00000-0xe1c1ffff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:19.0: reg 0x14: [mem 0xe1c80000-0xe1c80fff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:19.0: reg 0x18: [io  0x3080-0x309f]
+Feb 25 12:07:17 potato kernel: pci 0000:00:19.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1a.0: [8086:1c2d] type 00 class 0x0c0320
+Feb 25 12:07:17 potato kernel: pci 0000:00:1a.0: reg 0x10: [mem 0xe1c70000-0xe1c703ff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1b.0: [8086:1c20] type 00 class 0x040300
+Feb 25 12:07:17 potato kernel: pci 0000:00:1b.0: reg 0x10: [mem 0xe1c60000-0xe1c63fff 64bit]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.0: [8086:1c10] type 01 class 0x060400
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1: [8086:1c12] type 01 class 0x060400
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2: [8086:1c14] type 01 class 0x060400
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5: [8086:1c1a] type 01 class 0x060400
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1d.0: [8086:1c26] type 00 class 0x0c0320
+Feb 25 12:07:17 potato kernel: pci 0000:00:1d.0: reg 0x10: [mem 0xe1c50000-0xe1c503ff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.0: [8086:1c4f] type 00 class 0x060100
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: [8086:282a] type 00 class 0x010400
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x10: [io  0x30d0-0x30d7]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x14: [io  0x30c0-0x30c3]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x18: [io  0x30b0-0x30b7]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x1c: [io  0x30a0-0x30a3]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x20: [io  0x3060-0x307f]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: reg 0x24: [mem 0xe1c40000-0xe1c407ff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.2: PME# supported from D3hot
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.3: [8086:1c22] type 00 class 0x0c0500
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.3: reg 0x10: [mem 0xe1c30000-0xe1c300ff 64bit]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1f.3: reg 0x20: [io  0x3040-0x305f]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Feb 25 12:07:17 potato kernel: pci 0000:02:00.0: [14e4:4727] type 00 class 0x028000
+Feb 25 12:07:17 potato kernel: pci 0000:02:00.0: reg 0x10: [mem 0xe1b00000-0xe1b03fff 64bit]
+Feb 25 12:07:17 potato kernel: pci 0000:02:00.0: enabling Extended Tags
+Feb 25 12:07:17 potato kernel: pci 0000:02:00.0: supports D1 D2
+Feb 25 12:07:17 potato kernel: pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1: PCI bridge to [bus 02]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1:   bridge window [mem 0xe1b00000-0xe1bfffff]
+Feb 25 12:07:17 potato kernel: acpiphp: Slot [1] registered
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2: PCI bridge to [bus 03-08]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [io  0x2000-0x2fff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [mem 0xe1000000-0xe19fffff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [mem 0xe0000000-0xe09fffff 64bit pref]
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.0: [1217:13f7] type 00 class 0x0c0010
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.0: reg 0x10: [mem 0xe1a30000-0xe1a30fff]
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.0: supports D1 D2
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.1: [1217:8321] type 00 class 0x080501
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.1: reg 0x10: [mem 0xe1a20000-0xe1a201ff]
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.1: supports D1 D2
+Feb 25 12:07:17 potato kernel: pci 0000:09:00.1: PME# supported from D0 D1 D2 D3hot D3cold
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5: PCI bridge to [bus 09]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5:   bridge window [mem 0xe1a00000-0xe1afffff]
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 1 3 4 5 6 7 11 12 14 15) *10
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 1 3 4 5 6 7 11 12 14 15) *10
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 1 3 4 *5 6 7 10 12 14 15)
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs 1 3 4 5 6 7 11 12 14 15) *0, disabled.
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 1 *3 4 5 6 7 10 12 14 15)
+Feb 25 12:07:17 potato kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 1 3 4 5 6 7 11 12 14 15) *0, disabled.
+Feb 25 12:07:17 potato kernel: ACPI: EC: interrupt unblocked
+Feb 25 12:07:17 potato kernel: ACPI: EC: event unblocked
+Feb 25 12:07:17 potato kernel: ACPI: EC: EC_CMD/EC_SC=0x934, EC_DATA=0x930
+Feb 25 12:07:17 potato kernel: ACPI: EC: GPE=0x10
+Feb 25 12:07:17 potato kernel: ACPI: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC initialization complete
+Feb 25 12:07:17 potato kernel: ACPI: \_SB_.PCI0.LPCB.ECDV: EC: Used to handle transactions and events
+Feb 25 12:07:17 potato kernel: iommu: Default domain type: Translated 
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Feb 25 12:07:17 potato kernel: vgaarb: loaded
+Feb 25 12:07:17 potato kernel: EDAC MC: Ver: 3.0.0
+Feb 25 12:07:17 potato kernel: Registered efivars operations
+Feb 25 12:07:17 potato kernel: NetLabel: Initializing
+Feb 25 12:07:17 potato kernel: NetLabel:  domain hash size = 128
+Feb 25 12:07:17 potato kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Feb 25 12:07:17 potato kernel: NetLabel:  unlabeled traffic allowed by default
+Feb 25 12:07:17 potato kernel: PCI: Using ACPI for IRQ routing
+Feb 25 12:07:17 potato kernel: PCI: pci_cache_line_size set to 64 bytes
+Feb 25 12:07:17 potato kernel: e820: reserve RAM buffer [mem 0xc7215000-0xc7ffffff]
+Feb 25 12:07:17 potato kernel: e820: reserve RAM buffer [mem 0xcaa23000-0xcbffffff]
+Feb 25 12:07:17 potato kernel: e820: reserve RAM buffer [mem 0xcad53000-0xcbffffff]
+Feb 25 12:07:17 potato kernel: e820: reserve RAM buffer [mem 0xcb000000-0xcbffffff]
+Feb 25 12:07:17 potato kernel: e820: reserve RAM buffer [mem 0x22e000000-0x22fffffff]
+Feb 25 12:07:17 potato kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+Feb 25 12:07:17 potato kernel: hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+Feb 25 12:07:17 potato kernel: clocksource: Switched to clocksource tsc-early
+Feb 25 12:07:17 potato kernel: VFS: Disk quotas dquot_6.6.0
+Feb 25 12:07:17 potato kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Feb 25 12:07:17 potato kernel: AppArmor: AppArmor Filesystem Enabled
+Feb 25 12:07:17 potato kernel: pnp: PnP ACPI init
+Feb 25 12:07:17 potato kernel: system 00:00: [mem 0xfed00000-0xfed003ff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:00: Plug and Play ACPI device, IDs PNP0103 PNP0c01 (active)
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0x0680-0x069f] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0x1000-0x100f] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0xffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0xffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0x0400-0x047f] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0x0500-0x057f] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: [io  0x164e-0x164f] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+Feb 25 12:07:17 potato kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0b00 (active)
+Feb 25 12:07:17 potato kernel: pnp 00:03: Plug and Play ACPI device, IDs DELabcd PNP0303 (active)
+Feb 25 12:07:17 potato kernel: pnp 00:04: Plug and Play ACPI device, IDs PNP0401 (disabled)
+Feb 25 12:07:17 potato kernel: pnp 00:05: Plug and Play ACPI device, IDs DLL04b4 PNP0f13 (active)
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed1c000-0xfed1ffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed10000-0xfed17fff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed18000-0xfed18fff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed19000-0xfed19fff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xf8000000-0xfbffffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed20000-0xfed3ffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed90000-0xfed93fff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfed45000-0xfed8ffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xff000000-0xffffffff] could not be reserved
+Feb 25 12:07:17 potato kernel: system 00:06: [mem 0xfee00000-0xfeefffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:06: Plug and Play ACPI device, IDs PNP0c02 (active)
+Feb 25 12:07:17 potato kernel: system 00:07: [mem 0x20000000-0x201fffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:07: [mem 0x40000000-0x401fffff] has been reserved
+Feb 25 12:07:17 potato kernel: system 00:07: Plug and Play ACPI device, IDs PNP0c01 (active)
+Feb 25 12:07:17 potato kernel: pnp: PnP ACPI: found 8 devices
+Feb 25 12:07:17 potato kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Feb 25 12:07:17 potato kernel: NET: Registered protocol family 2
+Feb 25 12:07:17 potato kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Feb 25 12:07:17 potato kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Feb 25 12:07:17 potato kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Feb 25 12:07:17 potato kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Feb 25 12:07:17 potato kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Feb 25 12:07:17 potato kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Feb 25 12:07:17 potato kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Feb 25 12:07:17 potato kernel: NET: Registered protocol family 1
+Feb 25 12:07:17 potato kernel: NET: Registered protocol family 44
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1: PCI bridge to [bus 02]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.1:   bridge window [mem 0xe1b00000-0xe1bfffff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2: PCI bridge to [bus 03-08]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [io  0x2000-0x2fff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [mem 0xe1000000-0xe19fffff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.2:   bridge window [mem 0xe0000000-0xe09fffff 64bit pref]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5: PCI bridge to [bus 09]
+Feb 25 12:07:17 potato kernel: pci 0000:00:1c.5:   bridge window [mem 0xe1a00000-0xe1afffff]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:00: resource 7 [mem 0xcfa00000-0xfeafffff window]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:00: resource 8 [mem 0xfed40000-0xfed44fff window]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:02: resource 1 [mem 0xe1b00000-0xe1bfffff]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:03: resource 0 [io  0x2000-0x2fff]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:03: resource 1 [mem 0xe1000000-0xe19fffff]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:03: resource 2 [mem 0xe0000000-0xe09fffff 64bit pref]
+Feb 25 12:07:17 potato kernel: pci_bus 0000:09: resource 1 [mem 0xe1a00000-0xe1afffff]
+Feb 25 12:07:17 potato kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Feb 25 12:07:17 potato kernel: PCI: CLS 64 bytes, default 64
+Feb 25 12:07:17 potato kernel: Trying to unpack rootfs image as initramfs...
+Feb 25 12:07:17 potato kernel: Freeing initrd memory: 28592K
+Feb 25 12:07:17 potato kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Feb 25 12:07:17 potato kernel: software IO TLB: mapped [mem 0x00000000c311f000-0x00000000c711f000] (64MB)
+Feb 25 12:07:17 potato kernel: Initialise system trusted keyrings
+Feb 25 12:07:17 potato kernel: Key type blacklist registered
+Feb 25 12:07:17 potato kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Feb 25 12:07:17 potato kernel: zbud: loaded
+Feb 25 12:07:17 potato kernel: integrity: Platform Keyring initialized
+Feb 25 12:07:17 potato kernel: Key type asymmetric registered
+Feb 25 12:07:17 potato kernel: Asymmetric key parser 'x509' registered
+Feb 25 12:07:17 potato kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Feb 25 12:07:17 potato kernel: io scheduler mq-deadline registered
+Feb 25 12:07:17 potato kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Feb 25 12:07:17 potato kernel: efifb: probing for efifb
+Feb 25 12:07:17 potato kernel: efifb: framebuffer at 0xd0000000, using 1920k, total 1920k
+Feb 25 12:07:17 potato kernel: efifb: mode is 800x600x32, linelength=3200, pages=1
+Feb 25 12:07:17 potato kernel: efifb: scrolling: redraw
+Feb 25 12:07:17 potato kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+Feb 25 12:07:17 potato kernel: Console: switching to colour frame buffer device 100x37
+Feb 25 12:07:17 potato kernel: fb0: EFI VGA frame buffer device
+Feb 25 12:07:17 potato kernel: intel_idle: MWAIT substates: 0x21120
+Feb 25 12:07:17 potato kernel: intel_idle: v0.5.1 model 0x2A
+Feb 25 12:07:17 potato kernel: intel_idle: Local APIC timer is reliable in all C-states
+Feb 25 12:07:17 potato kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Feb 25 12:07:17 potato kernel: ACPI: Thermal Zone [THM] (25 C)
+Feb 25 12:07:17 potato kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Feb 25 12:07:17 potato kernel: Linux agpgart interface v0.103
+Feb 25 12:07:17 potato kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+Feb 25 12:07:17 potato kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Feb 25 12:07:17 potato kernel: i8042: Warning: Keylock active
+Feb 25 12:07:17 potato kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Feb 25 12:07:17 potato kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Feb 25 12:07:17 potato kernel: mousedev: PS/2 mouse device common for all mice
+Feb 25 12:07:17 potato kernel: rtc_cmos 00:02: RTC can wake from S4
+Feb 25 12:07:17 potato kernel: rtc_cmos 00:02: registered as rtc0
+Feb 25 12:07:17 potato kernel: rtc_cmos 00:02: setting system clock to 2023-02-25T04:07:13 UTC (1677298033)
+Feb 25 12:07:17 potato kernel: rtc_cmos 00:02: alarms up to one year, y3k, 242 bytes nvram, hpet irqs
+Feb 25 12:07:17 potato kernel: intel_pstate: Intel P-state driver initializing
+Feb 25 12:07:17 potato kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Feb 25 12:07:17 potato kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Feb 25 12:07:17 potato kernel: NET: Registered protocol family 10
+Feb 25 12:07:17 potato kernel: Segment Routing with IPv6
+Feb 25 12:07:17 potato kernel: mip6: Mobile IPv6
+Feb 25 12:07:17 potato kernel: NET: Registered protocol family 17
+Feb 25 12:07:17 potato kernel: mpls_gso: MPLS GSO support
+Feb 25 12:07:17 potato kernel: microcode: sig=0x206a7, pf=0x10, revision=0x29
+Feb 25 12:07:17 potato kernel: microcode: Microcode Update Driver: v2.2.
+Feb 25 12:07:17 potato kernel: IPI shorthand broadcast: enabled
+Feb 25 12:07:17 potato kernel: sched_clock: Marking stable (1410660096, 300612)->(1421600564, -10639856)
+Feb 25 12:07:17 potato kernel: registered taskstats version 1
+Feb 25 12:07:17 potato kernel: Loading compiled-in X.509 certificates
+Feb 25 12:07:17 potato kernel: Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+Feb 25 12:07:17 potato kernel: Loaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: 14011249c2675ea8e5148542202005810584b25f'
+Feb 25 12:07:17 potato kernel: zswap: loaded using pool lzo/zbud
+Feb 25 12:07:17 potato kernel: Key type .fscrypt registered
+Feb 25 12:07:17 potato kernel: Key type fscrypt-provisioning registered
+Feb 25 12:07:17 potato kernel: AppArmor: AppArmor sha1 policy hashing enabled
+Feb 25 12:07:17 potato kernel: Freeing unused decrypted memory: 2036K
+Feb 25 12:07:17 potato kernel: Freeing unused kernel image (initmem) memory: 2660K
+Feb 25 12:07:17 potato kernel: Write protecting the kernel read-only data: 22528k
+Feb 25 12:07:17 potato kernel: Freeing unused kernel image (text/rodata gap) memory: 2040K
+Feb 25 12:07:17 potato kernel: Freeing unused kernel image (rodata/data gap) memory: 632K
+Feb 25 12:07:17 potato kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb 25 12:07:17 potato kernel: x86/mm: Checking user space page tables
+Feb 25 12:07:17 potato kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb 25 12:07:17 potato kernel: Run /init as init process
+Feb 25 12:07:17 potato kernel:   with arguments:
+Feb 25 12:07:17 potato kernel:     /init
+Feb 25 12:07:17 potato kernel:   with environment:
+Feb 25 12:07:17 potato kernel:     HOME=/
+Feb 25 12:07:17 potato kernel:     TERM=linux
+Feb 25 12:07:17 potato kernel:     BOOT_IMAGE=/boot/vmlinuz-5.10.0-21-amd64
+Feb 25 12:07:17 potato kernel: battery: ACPI: Battery Slot [BAT0] (battery absent)
+Feb 25 12:07:17 potato kernel: wmi_bus wmi_bus-PNP0C14:00: WQBC data block query control method not found
+Feb 25 12:07:17 potato kernel: battery: ACPI: Battery Slot [BAT1] (battery absent)
+Feb 25 12:07:17 potato kernel: pps_core: LinuxPPS API ver. 1 registered
+Feb 25 12:07:17 potato kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Feb 25 12:07:17 potato kernel: ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042F conflicts with OpRegion 0x0000000000000400-0x000000000000047F (\PMIO) (20200925/utaddress-204)
+Feb 25 12:07:17 potato kernel: ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+Feb 25 12:07:17 potato kernel: ACPI Warning: SystemIO range 0x0000000000000540-0x000000000000054F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20200925/utaddress-204)
+Feb 25 12:07:17 potato kernel: ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+Feb 25 12:07:17 potato kernel: ACPI Warning: SystemIO range 0x0000000000000530-0x000000000000053F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20200925/utaddress-204)
+Feb 25 12:07:17 potato kernel: ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+Feb 25 12:07:17 potato kernel: ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20200925/utaddress-204)
+Feb 25 12:07:17 potato kernel: ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+Feb 25 12:07:17 potato kernel: lpc_ich: Resource conflict(s) found affecting gpio_ich
+Feb 25 12:07:17 potato kernel: PTP clock support registered
+Feb 25 12:07:17 potato kernel: i801_smbus 0000:00:1f.3: enabling device (0001 -> 0003)
+Feb 25 12:07:17 potato kernel: i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+Feb 25 12:07:17 potato kernel: i801_smbus 0000:00:1f.3: Accelerometer lis3lv02d is present on SMBus but its address is unknown, skipping registration
+Feb 25 12:07:17 potato kernel: i2c i2c-0: 2/2 memory slots populated (from DMI)
+Feb 25 12:07:17 potato kernel: sdhci: Secure Digital Host Controller Interface driver
+Feb 25 12:07:17 potato kernel: sdhci: Copyright(c) Pierre Ossman
+Feb 25 12:07:17 potato kernel: i2c i2c-0: Successfully instantiated SPD at 0x50
+Feb 25 12:07:17 potato kernel: sdhci-pci 0000:09:00.1: SDHCI controller found [1217:8321] (rev 5)
+Feb 25 12:07:17 potato kernel: sdhci-pci 0000:09:00.1: enabling device (0000 -> 0002)
+Feb 25 12:07:17 potato kernel: mmc0 bounce up to 128 segments into one, max segment size 65536 bytes
+Feb 25 12:07:17 potato kernel: firewire_ohci 0000:09:00.0: enabling device (0000 -> 0002)
+Feb 25 12:07:17 potato kernel: mmc0: SDHCI controller on PCI [0000:09:00.1] using DMA
+Feb 25 12:07:17 potato kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Feb 25 12:07:17 potato kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+Feb 25 12:07:17 potato kernel: ACPI: bus type USB registered
+Feb 25 12:07:17 potato kernel: usbcore: registered new interface driver usbfs
+Feb 25 12:07:17 potato kernel: usbcore: registered new interface driver hub
+Feb 25 12:07:17 potato kernel: usbcore: registered new device driver usb
+Feb 25 12:07:17 potato kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Feb 25 12:07:17 potato kernel: ehci-pci: EHCI PCI platform driver
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: EHCI Host Controller
+Feb 25 12:07:17 potato kernel: SCSI subsystem initialized
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: new USB bus registered, assigned bus number 1
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: debug port 2
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: cache line size of 64 is not supported
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: irq 16, io mem 0xe1c70000
+Feb 25 12:07:17 potato kernel: firewire_ohci 0000:09:00.0: added OHCI v1.10 device as card 0, 8 IR + 8 IT contexts, quirks 0x10
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+Feb 25 12:07:17 potato kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Feb 25 12:07:17 potato kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb 25 12:07:17 potato kernel: usb usb1: Product: EHCI Host Controller
+Feb 25 12:07:17 potato kernel: usb usb1: Manufacturer: Linux 5.10.0-21-amd64 ehci_hcd
+Feb 25 12:07:17 potato kernel: usb usb1: SerialNumber: 0000:00:1a.0
+Feb 25 12:07:17 potato kernel: hub 1-0:1.0: USB hub found
+Feb 25 12:07:17 potato kernel: hub 1-0:1.0: 2 ports detected
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: EHCI Host Controller
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 2
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: debug port 2
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: cache line size of 64 is not supported
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: irq 17, io mem 0xe1c50000
+Feb 25 12:07:17 potato kernel: libata version 3.00 loaded.
+Feb 25 12:07:17 potato kernel: ahci 0000:00:1f.2: version 3.0
+Feb 25 12:07:17 potato kernel: ahci 0000:00:1f.2: SSS flag set, parallel bus scan disabled
+Feb 25 12:07:17 potato kernel: ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+Feb 25 12:07:17 potato kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Feb 25 12:07:17 potato kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb 25 12:07:17 potato kernel: usb usb2: Product: EHCI Host Controller
+Feb 25 12:07:17 potato kernel: usb usb2: Manufacturer: Linux 5.10.0-21-amd64 ehci_hcd
+Feb 25 12:07:17 potato kernel: usb usb2: SerialNumber: 0000:00:1d.0
+Feb 25 12:07:17 potato kernel: hub 2-0:1.0: USB hub found
+Feb 25 12:07:17 potato kernel: hub 2-0:1.0: 2 ports detected
+Feb 25 12:07:17 potato kernel: ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 6 ports 6 Gbps 0x3b impl RAID mode
+Feb 25 12:07:17 potato kernel: ahci 0000:00:1f.2: flags: 64bit ncq sntf stag pm led clo pio slum part ems sxs apst 
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0 0000:00:19.0 (uninitialized): registered PHC clock
+Feb 25 12:07:17 potato kernel: scsi host0: ahci
+Feb 25 12:07:17 potato kernel: scsi host1: ahci
+Feb 25 12:07:17 potato kernel: scsi host2: ahci
+Feb 25 12:07:17 potato kernel: scsi host3: ahci
+Feb 25 12:07:17 potato kernel: scsi host4: ahci
+Feb 25 12:07:17 potato kernel: scsi host5: ahci
+Feb 25 12:07:17 potato kernel: ata1: SATA max UDMA/133 abar m2048@0xe1c40000 port 0xe1c40100 irq 25
+Feb 25 12:07:17 potato kernel: ata2: SATA max UDMA/133 abar m2048@0xe1c40000 port 0xe1c40180 irq 25
+Feb 25 12:07:17 potato kernel: ata3: DUMMY
+Feb 25 12:07:17 potato kernel: ata4: SATA max UDMA/133 abar m2048@0xe1c40000 port 0xe1c40280 irq 25
+Feb 25 12:07:17 potato kernel: ata5: SATA max UDMA/133 abar m2048@0xe1c40000 port 0xe1c40300 irq 25
+Feb 25 12:07:17 potato kernel: ata6: SATA max UDMA/133 abar m2048@0xe1c40000 port 0xe1c40380 irq 25
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0 eth0: (PCI Express:2.5GT/s:Width x1) d4:be:d9:ff:21:8d
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0 eth0: Intel(R) PRO/1000 Network Connection
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0 eth0: MAC: 10, PHY: 11, PBA No: B041FF-0FF
+Feb 25 12:07:17 potato kernel: usb 1-1: new high-speed USB device number 2 using ehci-pci
+Feb 25 12:07:17 potato kernel: usb 2-1: new high-speed USB device number 2 using ehci-pci
+Feb 25 12:07:17 potato kernel: tsc: Refined TSC clocksource calibration: 2195.012 MHz
+Feb 25 12:07:17 potato kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fa3cab9042, max_idle_ns: 440795210298 ns
+Feb 25 12:07:17 potato kernel: clocksource: Switched to clocksource tsc
+Feb 25 12:07:17 potato kernel: ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Feb 25 12:07:17 potato kernel: ata1.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+Feb 25 12:07:17 potato kernel: ata1.00: ATA-10: AGI240G06AI138, T0317A0, max UDMA/133
+Feb 25 12:07:17 potato kernel: ata1.00: 468862128 sectors, multi 1: LBA48 NCQ (depth 32), AA
+Feb 25 12:07:17 potato kernel: ata1.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+Feb 25 12:07:17 potato kernel: ata1.00: configured for UDMA/133
+Feb 25 12:07:17 potato kernel: scsi 0:0:0:0: Direct-Access     ATA      AGI240G06AI138   7A0  PQ: 0 ANSI: 5
+Feb 25 12:07:17 potato kernel: usb 1-1: New USB device found, idVendor=8087, idProduct=0024, bcdDevice= 0.00
+Feb 25 12:07:17 potato kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Feb 25 12:07:17 potato kernel: hub 1-1:1.0: USB hub found
+Feb 25 12:07:17 potato kernel: hub 1-1:1.0: 6 ports detected
+Feb 25 12:07:17 potato kernel: usb 2-1: New USB device found, idVendor=8087, idProduct=0024, bcdDevice= 0.00
+Feb 25 12:07:17 potato kernel: usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Feb 25 12:07:17 potato kernel: hub 2-1:1.0: USB hub found
+Feb 25 12:07:17 potato kernel: hub 2-1:1.0: 8 ports detected
+Feb 25 12:07:17 potato kernel: firewire_core 0000:09:00.0: created device fw0: GUID 029a9781324fc000, S400
+Feb 25 12:07:17 potato kernel: usb 1-1.4: new full-speed USB device number 3 using ehci-pci
+Feb 25 12:07:17 potato kernel: ata2: SATA link down (SStatus 0 SControl 300)
+Feb 25 12:07:17 potato kernel: usb 2-1.8: new full-speed USB device number 3 using ehci-pci
+Feb 25 12:07:17 potato kernel: usb 1-1.4: New USB device found, idVendor=413c, idProduct=8187, bcdDevice= 5.17
+Feb 25 12:07:17 potato kernel: usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Feb 25 12:07:17 potato kernel: usb 1-1.4: Product: DW375 Bluetooth Module
+Feb 25 12:07:17 potato kernel: usb 1-1.4: Manufacturer: Dell Computer Corp
+Feb 25 12:07:17 potato kernel: usb 1-1.4: SerialNumber: 9CB70D53D281
+Feb 25 12:07:17 potato kernel: usb 2-1.8: config 0 has an invalid interface number: 3 but max is 2
+Feb 25 12:07:17 potato kernel: usb 2-1.8: config 0 has no interface number 2
+Feb 25 12:07:17 potato kernel: usb 2-1.8: New USB device found, idVendor=0a5c, idProduct=5801, bcdDevice= 1.01
+Feb 25 12:07:17 potato kernel: usb 2-1.8: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Feb 25 12:07:17 potato kernel: usb 2-1.8: Product: 5880
+Feb 25 12:07:17 potato kernel: usb 2-1.8: Manufacturer: Broadcom Corp
+Feb 25 12:07:17 potato kernel: usb 2-1.8: SerialNumber: 0123456789ABCD
+Feb 25 12:07:17 potato kernel: usb 2-1.8: config 0 descriptor??
+Feb 25 12:07:17 potato kernel: usb 1-1.5: new high-speed USB device number 4 using ehci-pci
+Feb 25 12:07:17 potato kernel: ata4: SATA link down (SStatus 0 SControl 300)
+Feb 25 12:07:17 potato kernel: usb 1-1.5: New USB device found, idVendor=0c45, idProduct=6437, bcdDevice=12.24
+Feb 25 12:07:17 potato kernel: usb 1-1.5: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+Feb 25 12:07:17 potato kernel: usb 1-1.5: Product: Laptop_Integrated_Webcam_HD
+Feb 25 12:07:17 potato kernel: usb 1-1.5: Manufacturer: CN0M1VK77248729O06V6A00
+Feb 25 12:07:17 potato kernel: usb 1-1.6: new full-speed USB device number 5 using ehci-pci
+Feb 25 12:07:17 potato kernel: ata5: SATA link down (SStatus 0 SControl 300)
+Feb 25 12:07:17 potato kernel: input: AlpsPS/2 ALPS DualPoint Stick as /devices/platform/i8042/serio1/input/input3
+Feb 25 12:07:17 potato kernel: input: AlpsPS/2 ALPS DualPoint TouchPad as /devices/platform/i8042/serio1/input/input2
+Feb 25 12:07:17 potato kernel: ata6: SATA link down (SStatus 0 SControl 300)
+Feb 25 12:07:17 potato kernel: e1000e 0000:00:19.0 eno1: renamed from eth0
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: [sda] 468862128 512-byte logical blocks: (240 GB/224 GiB)
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: [sda] Write Protect is off
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Feb 25 12:07:17 potato kernel: Alternate GPT is invalid, using primary GPT.
+Feb 25 12:07:17 potato kernel:  sda: sda1 sda2 sda3
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Feb 25 12:07:17 potato kernel: PM: Image not found (code -22)
+Feb 25 12:07:17 potato kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+Feb 25 12:07:17 potato kernel: Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Feb 25 12:07:17 potato systemd[1]: Inserted module 'autofs4'
+Feb 25 12:07:17 potato systemd[1]: systemd 247.3-7+deb11u1 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)
+Feb 25 12:07:17 potato systemd[1]: Detected architecture x86-64.
+Feb 25 12:07:17 potato systemd[1]: Set hostname to <potato>.
+Feb 25 12:07:17 potato systemd[1]: Queued start job for default target Graphical Interface.
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato systemd[1]: Created slice system-getty.slice.
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato systemd[1]: Created slice system-modprobe.slice.
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato systemd[1]: Created slice User and Session Slice.
+Feb 25 12:07:17 potato systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Feb 25 12:07:17 potato systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Feb 25 12:07:17 potato systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Feb 25 12:07:17 potato systemd[1]: Reached target Local Encrypted Volumes.
+Feb 25 12:07:17 potato systemd[1]: Reached target Paths.
+Feb 25 12:07:17 potato systemd[1]: Reached target Remote File Systems.
+Feb 25 12:07:17 potato systemd[1]: Reached target Slices.
+Feb 25 12:07:17 potato systemd[1]: Listening on Syslog Socket.
+Feb 25 12:07:17 potato systemd[1]: Listening on fsck to fsckd communication Socket.
+Feb 25 12:07:17 potato systemd[1]: Listening on initctl Compatibility Named Pipe.
+Feb 25 12:07:17 potato systemd[1]: Listening on Journal Audit Socket.
+Feb 25 12:07:17 potato systemd[1]: Listening on Journal Socket (/dev/log).
+Feb 25 12:07:17 potato systemd[1]: Listening on Journal Socket.
+Feb 25 12:07:17 potato systemd[1]: Listening on udev Control Socket.
+Feb 25 12:07:17 potato systemd[1]: Listening on udev Kernel Socket.
+Feb 25 12:07:17 potato systemd[1]: Mounting Huge Pages File System...
+Feb 25 12:07:17 potato systemd[1]: Mounting POSIX Message Queue File System...
+Feb 25 12:07:17 potato systemd[1]: Mounting Kernel Debug File System...
+Feb 25 12:07:17 potato systemd[1]: Mounting Kernel Trace File System...
+Feb 25 12:07:17 potato systemd[1]: Starting Set the console keyboard layout...
+Feb 25 12:07:17 potato systemd[1]: Starting Create list of static device nodes for the current kernel...
+Feb 25 12:07:17 potato systemd[1]: Starting Load Kernel Module configfs...
+Feb 25 12:07:17 potato systemd[1]: Starting Load Kernel Module drm...
+Feb 25 12:07:17 potato systemd[1]: Starting Load Kernel Module fuse...
+Feb 25 12:07:17 potato systemd[1]: Started Nameserver information manager.
+Feb 25 12:07:17 potato systemd[1]: Reached target Network (Pre).
+Feb 25 12:07:17 potato systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+Feb 25 12:07:17 potato systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+Feb 25 12:07:17 potato systemd[1]: Starting Journal Service...
+Feb 25 12:07:17 potato systemd[1]: Starting Load Kernel Modules...
+Feb 25 12:07:17 potato systemd[1]: Starting Remount Root and Kernel File Systems...
+Feb 25 12:07:17 potato systemd[1]: Starting Coldplug All udev Devices...
+Feb 25 12:07:17 potato systemd[1]: Mounted Huge Pages File System.
+Feb 25 12:07:17 potato systemd[1]: Mounted POSIX Message Queue File System.
+Feb 25 12:07:17 potato systemd[1]: Mounted Kernel Debug File System.
+Feb 25 12:07:17 potato systemd[1]: Mounted Kernel Trace File System.
+Feb 25 12:07:17 potato systemd[1]: Finished Create list of static device nodes for the current kernel.
+Feb 25 12:07:17 potato systemd[1]: modprobe@configfs.service: Succeeded.
+Feb 25 12:07:17 potato systemd[1]: Finished Load Kernel Module configfs.
+Feb 25 12:07:17 potato systemd[1]: Mounting Kernel Configuration File System...
+Feb 25 12:07:17 potato systemd[1]: Mounted Kernel Configuration File System.
+Feb 25 12:07:17 potato kernel: fuse: init (API version 7.32)
+Feb 25 12:07:17 potato kernel: EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro
+Feb 25 12:07:17 potato systemd[1]: modprobe@fuse.service: Succeeded.
+Feb 25 12:07:17 potato systemd[1]: Finished Load Kernel Module fuse.
+Feb 25 12:07:17 potato systemd[1]: Finished Remount Root and Kernel File Systems.
+Feb 25 12:07:17 potato kernel: Asymmetric key parser 'pkcs8' registered
+Feb 25 12:07:17 potato systemd[1]: Mounting FUSE Control File System...
+Feb 25 12:07:17 potato systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Feb 25 12:07:17 potato systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Feb 25 12:07:17 potato systemd[1]: Starting Load/Save Random Seed...
+Feb 25 12:07:17 potato systemd[1]: Starting Create System Users...
+Feb 25 12:07:17 potato systemd[1]: Finished Load Kernel Modules.
+Feb 25 12:07:17 potato systemd[1]: Starting Apply Kernel Variables...
+Feb 25 12:07:17 potato systemd[1]: Mounted FUSE Control File System.
+Feb 25 12:07:17 potato systemd[1]: Finished Apply Kernel Variables.
+Feb 25 12:07:17 potato systemd[1]: modprobe@drm.service: Succeeded.
+Feb 25 12:07:17 potato systemd[1]: Finished Load Kernel Module drm.
+Feb 25 12:07:17 potato systemd[1]: Finished Create System Users.
+Feb 25 12:07:17 potato systemd[1]: Starting Create Static Device Nodes in /dev...
+Feb 25 12:07:17 potato systemd[1]: Finished Create Static Device Nodes in /dev.
+Feb 25 12:07:17 potato systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Feb 25 12:07:17 potato systemd[1]: Started Rule-based Manager for Device Events and Files.
+Feb 25 12:07:17 potato systemd[1]: Finished Coldplug All udev Devices.
+Feb 25 12:07:17 potato systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+Feb 25 12:07:17 potato systemd[1]: Finished Set the console keyboard layout.
+Feb 25 12:07:17 potato systemd[1]: Reached target Local File Systems (Pre).
+Feb 25 12:07:17 potato systemd-journald[240]: Journal started
+Feb 25 12:07:17 potato systemd-journald[240]: Runtime Journal (/run/log/journal/3e77daff38344371b79ad6014c9f656c) is 8.0M, max 78.3M, 70.3M free.
+Feb 25 12:07:17 potato systemd[1]: Started Journal Service.
+Feb 25 12:07:16 potato systemd-modules-load[246]: Inserted module 'firewire_sbp2'
+Feb 25 12:07:16 potato systemd-modules-load[246]: Inserted module 'pkcs8_key_parser'
+Feb 25 12:07:16 potato systemd-random-seed[254]: Kernel entropy pool is not initialized yet, waiting until it is.
+Feb 25 12:07:17 potato systemd[1]: Starting Flush Journal to Persistent Storage...
+Feb 25 12:07:17 potato systemd-journald[240]: Time spent on flushing to /var/log/journal/3e77daff38344371b79ad6014c9f656c is 405.598ms for 759 entries.
+Feb 25 12:07:17 potato systemd-journald[240]: System Journal (/var/log/journal/3e77daff38344371b79ad6014c9f656c) is 144.0M, max 4.0G, 3.8G free.
+Feb 25 12:07:17 potato kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input4
+Feb 25 12:07:17 potato kernel: ACPI: Lid Switch [LID]
+Feb 25 12:07:17 potato kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input5
+Feb 25 12:07:17 potato kernel: ACPI: Power Button [PBTN]
+Feb 25 12:07:17 potato kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input6
+Feb 25 12:07:17 potato kernel: ACPI: Sleep Button [SBTN]
+Feb 25 12:07:17 potato kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input7
+Feb 25 12:07:17 potato kernel: ACPI: Power Button [PWRF]
+Feb 25 12:07:17 potato kernel: ACPI: AC Adapter [AC] (on-line)
+Feb 25 12:07:17 potato kernel: parport_pc 00:04: [io  0x0378-0x037b]
+Feb 25 12:07:17 potato kernel: parport_pc 00:04: [irq 5]
+Feb 25 12:07:17 potato kernel: parport_pc 00:04: activated
+Feb 25 12:07:17 potato kernel: parport_pc 00:04: reported by Plug and Play ACPI
+Feb 25 12:07:17 potato kernel: at24 0-0050: supply vcc not found, using dummy regulator
+Feb 25 12:07:17 potato kernel: at24 0-0050: 256 byte spd EEPROM, read-only
+Feb 25 12:07:17 potato kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Feb 25 12:07:17 potato kernel: pstore: Using crash dump compression: deflate
+Feb 25 12:07:17 potato kernel: pstore: Registered efi as persistent store backend
+Feb 25 12:07:17 potato kernel: input: PC Speaker as /devices/platform/pcspkr/input/input8
+Feb 25 12:07:17 potato kernel: iTCO_vendor_support: vendor-support=0
+Feb 25 12:07:17 potato kernel: dcdbas dcdbas: Dell Systems Management Base Driver (version 5.6.0-3.4)
+Feb 25 12:07:17 potato systemd-udevd[264]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:17 potato kernel: Adding 999420k swap on /dev/sda3.  Priority:-2 extents:1 across:999420k SSFS
+Feb 25 12:07:17 potato systemd-udevd[264]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:17 potato systemd[1]: Reached target Smart Card.
+Feb 25 12:07:17 potato systemd[1]: Found device AGI240G06AI138 1.
+Feb 25 12:07:17 potato systemd[1]: Mounting /boot/efi...
+Feb 25 12:07:17 potato systemd[1]: Found device AGI240G06AI138 3.
+Feb 25 12:07:17 potato systemd[1]: Activating swap /dev/disk/by-uuid/a17f9fdf-6e11-4495-aaba-009234f8de43...
+Feb 25 12:07:17 potato systemd[1]: Activated swap /dev/disk/by-uuid/a17f9fdf-6e11-4495-aaba-009234f8de43.
+Feb 25 12:07:17 potato systemd[1]: Finished Flush Journal to Persistent Storage.
+Feb 25 12:07:17 potato kernel: dell-smbios A80593CE-A997-11DA-B012-B622A1EF5492: WMI SMBIOS userspace interface not supported(0), try upgrading to a newer BIOS
+Feb 25 12:07:17 potato systemd[1]: Reached target Swap.
+Feb 25 12:07:17 potato systemd-udevd[277]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:17 potato kernel: iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+Feb 25 12:07:17 potato kernel: iTCO_wdt: Found a Cougar Point TCO device (Version=2, TCOBASE=0x0460)
+Feb 25 12:07:17 potato kernel: iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+Feb 25 12:07:17 potato kernel: RAPL PMU: API unit is 2^-32 Joules, 3 fixed counters, 163840 ms ovfl timer
+Feb 25 12:07:17 potato kernel: RAPL PMU: hw unit of domain pp0-core 2^-16 Joules
+Feb 25 12:07:17 potato kernel: RAPL PMU: hw unit of domain package 2^-16 Joules
+Feb 25 12:07:17 potato kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-16 Joules
+Feb 25 12:07:17 potato kernel: input: Dell WMI hotkeys as /devices/platform/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input9
+Feb 25 12:07:17 potato kernel: cryptd: max_cpu_qlen set to 1000
+Feb 25 12:07:17 potato kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Feb 25 12:07:17 potato kernel: cfg80211: Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+Feb 25 12:07:17 potato kernel: cfg80211: Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+Feb 25 12:07:17 potato kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Feb 25 12:07:17 potato kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Feb 25 12:07:17 potato kernel: platform regulatory.0: firmware: direct-loading firmware regulatory.db
+Feb 25 12:07:17 potato kernel: platform regulatory.0: firmware: direct-loading firmware regulatory.db.p7s
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Feb 25 12:07:17 potato systemd[1]: Mounted /boot/efi.
+Feb 25 12:07:17 potato systemd[1]: Reached target Local File Systems.
+Feb 25 12:07:17 potato systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Feb 25 12:07:17 potato systemd[1]: Starting Load AppArmor profiles...
+Feb 25 12:07:17 potato systemd[1]: Starting Set console font and keymap...
+Feb 25 12:07:17 potato systemd[1]: Starting Create Volatile Files and Directories...
+Feb 25 12:07:17 potato kernel: ppdev: user-space parallel port driver
+Feb 25 12:07:17 potato systemd[1]: Finished Set console font and keymap.
+Feb 25 12:07:17 potato apparmor.systemd[364]: Restarting AppArmor
+Feb 25 12:07:18 potato kernel: wl: loading out-of-tree module taints kernel.
+Feb 25 12:07:18 potato kernel: wl: module license 'MIXED/Proprietary' taints kernel.
+Feb 25 12:07:18 potato kernel: Disabling lock debugging due to kernel taint
+Feb 25 12:07:18 potato kernel: wl: module verification failed: signature and/or required key missing - tainting kernel
+Feb 25 12:07:18 potato kernel: wl 0000:02:00.0: enabling device (0000 -> 0002)
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.125:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=380 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.149:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=377 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.149:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=377 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.149:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.149:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.149:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: audit: type=1400 audit(1677298038.177:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/unbound" pid=379 comm="apparmor_parser"
+Feb 25 12:07:18 potato kernel: wlan0: Broadcom BCM4727 802.11 Hybrid Wireless Controller 6.30.223.271 (r587334)
+Feb 25 12:07:18 potato kernel: 
+Feb 25 12:07:18 potato kernel: dell_laptop: Using i8042 filter function for receiving events
+Feb 25 12:07:18 potato audit[380]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=380 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[377]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=377 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[377]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=377 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[378]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[378]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[378]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=378 comm="apparmor_parser"
+Feb 25 12:07:18 potato audit[379]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/unbound" pid=379 comm="apparmor_parser"
+Feb 25 12:07:18 potato systemd[1]: Finished Create Volatile Files and Directories.
+Feb 25 12:07:18 potato apparmor.systemd[364]: Reloading AppArmor profiles
+Feb 25 12:07:18 potato systemd[1]: Finished Load AppArmor profiles.
+Feb 25 12:07:18 potato systemd[1]: Starting Load/Save RF Kill Switch Status...
+Feb 25 12:07:18 potato systemd[1]: Starting Network Time Synchronization...
+Feb 25 12:07:18 potato systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Feb 25 12:07:18 potato systemd-udevd[278]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:18 potato systemd[1]: Finished Update UTMP about System Boot/Shutdown.
+Feb 25 12:07:18 potato systemd-udevd[278]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:18 potato systemd[1]: Started Load/Save RF Kill Switch Status.
+Feb 25 12:07:18 potato kernel: checking generic (d0000000 1e0000) vs hw (e0c00000 400000)
+Feb 25 12:07:18 potato kernel: checking generic (d0000000 1e0000) vs hw (d0000000 10000000)
+Feb 25 12:07:18 potato kernel: fb0: switching to inteldrmfb from EFI VGA
+Feb 25 12:07:18 potato kernel: Console: switching to colour dummy device 80x25
+Feb 25 12:07:18 potato kernel: i915 0000:00:02.0: vgaarb: deactivate vga console
+Feb 25 12:07:18 potato systemd[1]: Started Network Time Synchronization.
+Feb 25 12:07:18 potato systemd[1]: Reached target System Initialization.
+Feb 25 12:07:18 potato systemd[1]: Started Daily Cleanup of Temporary Directories.
+Feb 25 12:07:18 potato systemd[1]: Reached target System Time Set.
+Feb 25 12:07:18 potato systemd[1]: Reached target System Time Synchronized.
+Feb 25 12:07:18 potato systemd[1]: Started Trigger anacron every hour.
+Feb 25 12:07:18 potato systemd[1]: Started Daily apt download activities.
+Feb 25 12:07:18 potato systemd[1]: Started Daily apt upgrade and clean activities.
+Feb 25 12:07:18 potato systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+Feb 25 12:07:18 potato systemd[1]: Started Discard unused blocks once a week.
+Feb 25 12:07:18 potato systemd[1]: Started Daily rotation of log files.
+Feb 25 12:07:18 potato systemd[1]: Started Daily man-db regeneration.
+Feb 25 12:07:18 potato systemd[1]: Reached target Timers.
+Feb 25 12:07:18 potato systemd[1]: Listening on D-Bus System Message Bus Socket.
+Feb 25 12:07:18 potato kernel: i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+Feb 25 12:07:18 potato systemd[1]: Starting Docker Socket for the API.
+Feb 25 12:07:18 potato systemd[1]: Listening on Docker Socket for the API.
+Feb 25 12:07:18 potato systemd[1]: Reached target Sockets.
+Feb 25 12:07:18 potato systemd[1]: Reached target Basic System.
+Feb 25 12:07:18 potato systemd[1]: Started Run anacron jobs.
+Feb 25 12:07:18 potato systemd[1]: Started Regular background program processing daemon.
+Feb 25 12:07:18 potato anacron[395]: Anacron 2.3 started on 2023-02-25
+Feb 25 12:07:18 potato systemd[1]: Started D-Bus System Message Bus.
+Feb 25 12:07:18 potato cron[396]: (CRON) INFO (pidfile fd = 3)
+Feb 25 12:07:18 potato systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+Feb 25 12:07:18 potato anacron[395]: Will run job `cron.daily' in 5 min.
+Feb 25 12:07:18 potato systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Feb 25 12:07:18 potato anacron[395]: Will run job `cron.weekly' in 10 min.
+Feb 25 12:07:18 potato systemd[1]: Starting System Logging Service...
+Feb 25 12:07:18 potato anacron[395]: Jobs will be executed sequentially
+Feb 25 12:07:18 potato cron[396]: (CRON) INFO (Running @reboot jobs)
+Feb 25 12:07:18 potato systemd[1]: Starting User Login Management...
+Feb 25 12:07:18 potato systemd[1]: Starting WPA supplicant...
+Feb 25 12:07:18 potato kernel: [drm] Initialized i915 1.6.0 20200917 for 0000:00:02.0 on minor 0
+Feb 25 12:07:18 potato kernel: ACPI: Video Device [VID] (multi-head: yes  rom: no  post: no)
+Feb 25 12:07:18 potato rsyslogd[399]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2102.0]
+Feb 25 12:07:18 potato rsyslogd[399]: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="399" x-info="https://www.rsyslog.com"] start
+Feb 25 12:07:18 potato systemd[1]: Started System Logging Service.
+Feb 25 12:07:18 potato kernel: intel_rapl_common: Found RAPL domain package
+Feb 25 12:07:18 potato kernel: intel_rapl_common: Found RAPL domain core
+Feb 25 12:07:18 potato kernel: intel_rapl_common: Found RAPL domain uncore
+Feb 25 12:07:18 potato kernel: intel_rapl_common: RAPL package-0 domain package locked by BIOS
+Feb 25 12:07:18 potato kernel: acpi device:39: registered as cooling_device5
+Feb 25 12:07:18 potato systemd[1]: Started WPA supplicant.
+Feb 25 12:07:18 potato wpa_supplicant[401]: Successfully initialized wpa_supplicant
+Feb 25 12:07:18 potato kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input10
+Feb 25 12:07:18 potato kernel: fbcon: i915drmfb (fb0) is primary device
+Feb 25 12:07:18 potato systemd[1]: e2scrub_reap.service: Succeeded.
+Feb 25 12:07:18 potato systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+Feb 25 12:07:18 potato systemd-logind[400]: Watching system buttons on /dev/input/event6 (Power Button)
+Feb 25 12:07:18 potato systemd-logind[400]: Watching system buttons on /dev/input/event4 (Power Button)
+Feb 25 12:07:18 potato systemd-logind[400]: Watching system buttons on /dev/input/event3 (Lid Switch)
+Feb 25 12:07:18 potato systemd-logind[400]: Watching system buttons on /dev/input/event5 (Sleep Button)
+Feb 25 12:07:18 potato systemd-logind[400]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Feb 25 12:07:18 potato systemd[1]: Finished Load/Save Random Seed.
+Feb 25 12:07:18 potato kernel: random: crng init done
+Feb 25 12:07:18 potato kernel: random: 162 urandom warning(s) missed due to ratelimiting
+Feb 25 12:07:18 potato systemd[1]: Condition check resulted in First Boot Complete being skipped.
+Feb 25 12:07:18 potato systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Feb 25 12:07:18 potato systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Feb 25 12:07:19 potato kernel: Console: switching to colour frame buffer device 170x48
+Feb 25 12:07:19 potato systemd-logind[400]: New seat seat0.
+Feb 25 12:07:19 potato systemd[1]: Started User Login Management.
+Feb 25 12:07:19 potato kernel: i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+Feb 25 12:07:19 potato systemd[1]: Created slice system-systemd\x2dbacklight.slice.
+Feb 25 12:07:19 potato systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:acpi_video0...
+Feb 25 12:07:19 potato systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:intel_backlight...
+Feb 25 12:07:19 potato systemd[1]: Finished Load/Save Screen Backlight Brightness of backlight:acpi_video0.
+Feb 25 12:07:19 potato systemd[1]: Finished Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+Feb 25 12:07:19 potato kernel: snd_hda_intel 0000:00:1b.0: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+Feb 25 12:07:19 potato kernel: input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input11
+Feb 25 12:07:19 potato kernel: input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input12
+Feb 25 12:07:19 potato kernel: input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input13
+Feb 25 12:07:19 potato systemd[1]: Reached target Sound Card.
+Feb 25 12:07:20 potato kernel: usb 1-1.6: New USB device found, idVendor=1b96, idProduct=0006, bcdDevice=71.01
+Feb 25 12:07:20 potato kernel: usb 1-1.6: New USB device strings: Mfr=6, Product=5, SerialNumber=4
+Feb 25 12:07:20 potato kernel: usb 1-1.6: Product: DuoSense
+Feb 25 12:07:20 potato kernel: usb 1-1.6: Manufacturer: N-trig
+Feb 25 12:07:20 potato kernel: usb 1-1.6: SerialNumber: 11.23.22.41.16
+Feb 25 12:07:20 potato kernel: mc: Linux media interface: v0.10
+Feb 25 12:07:20 potato kernel: hid: raw HID events driver (C) Jiri Kosina
+Feb 25 12:07:20 potato kernel: usbcore: registered new interface driver usbhid
+Feb 25 12:07:20 potato kernel: usbhid: USB HID core driver
+Feb 25 12:07:20 potato kernel: ntrig 0003:1B96:0006.0001: hiddev0,hidraw0: USB HID v1.10 Device [N-trig DuoSense] on usb-0000:00:1a.0-1.6/input0
+Feb 25 12:07:20 potato kernel: ntrig 0003:1B96:0006.0001: Firmware version: 3.7.22.41.0 (5e16 30c5)
+Feb 25 12:07:20 potato kernel: input: N-Trig Pen as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.6/1-1.6:1.1/0003:1B96:0006.0002/input/input14
+Feb 25 12:07:20 potato kernel: input: N-Trig MultiTouch as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.6/1-1.6:1.1/0003:1B96:0006.0002/input/input15
+Feb 25 12:07:20 potato kernel: input: N-Trig Touchscreen as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.6/1-1.6:1.1/0003:1B96:0006.0002/input/input16
+Feb 25 12:07:20 potato kernel: ntrig 0003:1B96:0006.0002: input,hidraw1: USB HID v1.10 Device [N-trig DuoSense] on usb-0000:00:1a.0-1.6/input1
+Feb 25 12:07:20 potato kernel: ntrig 0003:1B96:0006.0002: Firmware version: 3.7.22.41.0 (5e16 30c5)
+Feb 25 12:07:20 potato kernel: videodev: Linux video capture interface: v2.00
+Feb 25 12:07:20 potato kernel: uvcvideo: Found UVC 1.00 device Laptop_Integrated_Webcam_HD (0c45:6437)
+Feb 25 12:07:20 potato kernel: alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+Feb 25 12:07:21 potato kernel: Bluetooth: Core ver 2.22
+Feb 25 12:07:21 potato kernel: NET: Registered protocol family 31
+Feb 25 12:07:21 potato kernel: Bluetooth: HCI device and connection manager initialized
+Feb 25 12:07:21 potato kernel: Bluetooth: HCI socket layer initialized
+Feb 25 12:07:21 potato kernel: Bluetooth: L2CAP socket layer initialized
+Feb 25 12:07:21 potato kernel: Bluetooth: SCO socket layer initialized
+Feb 25 12:07:21 potato kernel: usbcore: registered new interface driver btusb
+Feb 25 12:07:21 potato systemd[1]: Starting Bluetooth service...
+Feb 25 12:07:21 potato kernel: input: Laptop_Integrated_Webcam_HD: In as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.5/1-1.5:1.0/input/input17
+Feb 25 12:07:21 potato kernel: usbcore: registered new interface driver uvcvideo
+Feb 25 12:07:21 potato kernel: USB Video Class driver (1.1.1)
+Feb 25 12:07:21 potato bluetoothd[484]: Bluetooth daemon 5.55
+Feb 25 12:07:21 potato systemd[1]: Started Bluetooth service.
+Feb 25 12:07:21 potato systemd[1]: Reached target Bluetooth.
+Feb 25 12:07:21 potato bluetoothd[484]: Starting SDP server
+Feb 25 12:07:21 potato kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Feb 25 12:07:21 potato kernel: Bluetooth: BNEP filters: protocol multicast
+Feb 25 12:07:21 potato kernel: Bluetooth: BNEP socket layer initialized
+Feb 25 12:07:21 potato bluetoothd[484]: Bluetooth management interface 1.18 initialized
+Feb 25 12:07:21 potato dbus-daemon[397]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.4' (uid=0 pid=484 comm="/usr/libexec/bluetooth/bluetoothd ")
+Feb 25 12:07:21 potato bluetoothd[484]: profiles/sap/server.c:sap_server_register() Sap driver initialization failed.
+Feb 25 12:07:21 potato bluetoothd[484]: sap-server: Operation not permitted (1)
+Feb 25 12:07:21 potato systemd[1]: Starting Hostname Service...
+Feb 25 12:07:21 potato systemd[1]: Finished Helper to synchronize boot up for ifupdown.
+Feb 25 12:07:21 potato systemd[1]: Starting Raise network interfaces...
+Feb 25 12:07:21 potato wpa_supplicant[531]: Successfully initialized wpa_supplicant
+Feb 25 12:07:21 potato dbus-daemon[397]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Feb 25 12:07:21 potato systemd[1]: Started Hostname Service.
+Feb 25 12:07:21 potato systemd[1]: Finished Raise network interfaces.
+Feb 25 12:07:21 potato systemd[1]: Reached target Network.
+Feb 25 12:07:21 potato systemd[1]: Reached target Network is Online.
+Feb 25 12:07:21 potato systemd[1]: Starting containerd container runtime...
+Feb 25 12:07:21 potato systemd[1]: Starting OpenBSD Secure Shell server...
+Feb 25 12:07:21 potato systemd[1]: Starting Permit User Sessions...
+Feb 25 12:07:21 potato systemd[1]: Finished Permit User Sessions.
+Feb 25 12:07:21 potato systemd[1]: Started Getty on tty1.
+Feb 25 12:07:21 potato systemd[1]: Reached target Login Prompts.
+Feb 25 12:07:21 potato sshd[587]: Server listening on 0.0.0.0 port 22.
+Feb 25 12:07:21 potato sshd[587]: Server listening on :: port 22.
+Feb 25 12:07:21 potato systemd[1]: Started OpenBSD Secure Shell server.
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22+08:00" level=warning msg="containerd config version `1` has been deprecated and will be removed in containerd v2.0, please switch to version `2`, see https://github.com/containerd/containerd/blob/main/docs/PLUGINS.md#version-header"
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.063028668+08:00" level=info msg="starting containerd" revision=2456e983eb9e37e47538f59ea18f2043c9a73640 version=1.6.18
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.120811739+08:00" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.121330530+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.128194027+08:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/5.10.0-21-amd64\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.129964077+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.131014969+08:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.131144667+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.131241023+08:00" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="devmapper not configured"
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.131349648+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.132239897+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.133352777+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.134892512+08:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.134979935+08:00" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.135091275+08:00" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="devmapper not configured"
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.135154334+08:00" level=info msg="metadata content store policy set" policy=shared
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.137582294+08:00" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.137696932+08:00" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.137748354+08:00" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.137885556+08:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.137952092+08:00" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138034071+08:00" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138101198+08:00" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138166367+08:00" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138213525+08:00" level=info msg="loading plugin \"io.containerd.service.v1.leases-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138260643+08:00" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138303033+08:00" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138345548+08:00" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138505474+08:00" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.138655582+08:00" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.140506057+08:00" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.140590620+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.140638499+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141088731+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141155497+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141217558+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141259056+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141299715+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141379303+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141436673+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141481013+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.141526757+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.142736434+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.142825349+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.142900180+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.142966658+08:00" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.143036879+08:00" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.143108226+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.143184133+08:00" level=error msg="failed to initialize a tracing processor \"otlp\"" error="no OpenTelemetry endpoint: skip plugin"
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.143939989+08:00" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.144074384+08:00" level=info msg=serving... address=/run/containerd/containerd.sock
+Feb 25 12:07:22 potato containerd[586]: time="2023-02-25T12:07:22.145741105+08:00" level=info msg="containerd successfully booted in 0.086013s"
+Feb 25 12:07:22 potato systemd[1]: Started containerd container runtime.
+Feb 25 12:07:22 potato systemd[1]: Starting Docker Application Container Engine...
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: Trying to associate with bc:22:28:62:62:b4 (SSID='NoorZaafira_2.4hz@unifi' freq=2462 MHz)
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: Associated with bc:22:28:62:62:b4
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=MY
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: WPA: Key negotiation completed with bc:22:28:62:62:b4 [PTK=CCMP GTK=CCMP]
+Feb 25 12:07:22 potato wpa_supplicant[532]: wlan0: CTRL-EVENT-CONNECTED - Connection to bc:22:28:62:62:b4 completed [id=0 id_str=]
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.515649281+08:00" level=info msg="Starting up"
+Feb 25 12:07:22 potato audit[607]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=607 comm="apparmor_parser"
+Feb 25 12:07:22 potato kernel: audit: type=1400 audit(1677298042.581:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=607 comm="apparmor_parser"
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.592959707+08:00" level=info msg="[core] [Channel #1] Channel created" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.593053889+08:00" level=info msg="[core] [Channel #1] original dial target is: \"unix:///run/containerd/containerd.sock\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.593258557+08:00" level=info msg="[core] [Channel #1] parsed dial target is: {Scheme:unix Authority: Endpoint:run/containerd/containerd.sock URL:{Scheme:unix Opaque: User: Host: Path:/run/containerd/containerd.sock RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.593345842+08:00" level=info msg="[core] [Channel #1] Channel authority set to \"localhost\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.596119816+08:00" level=info msg="[core] [Channel #1] Resolver state updated: {\n  \"Addresses\": [\n    {\n      \"Addr\": \"/run/containerd/containerd.sock\",\n      \"ServerName\": \"\",\n      \"Attributes\": {},\n      \"BalancerAttributes\": null,\n      \"Type\": 0,\n      \"Metadata\": null\n    }\n  ],\n  \"ServiceConfig\": null,\n  \"Attributes\": null\n} (resolver returned new addresses)" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.596911791+08:00" level=info msg="[core] [Channel #1] Channel switches to new LB policy \"pick_first\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.599149523+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel created" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.599329411+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.599434288+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel picks a new address \"/run/containerd/containerd.sock\" to connect" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.599606568+08:00" level=info msg="[core] [Channel #1] Channel Connectivity change to CONNECTING" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.604206574+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel Connectivity change to READY" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.604374944+08:00" level=info msg="[core] [Channel #1] Channel Connectivity change to READY" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610173739+08:00" level=info msg="[core] [Channel #4] Channel created" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610248517+08:00" level=info msg="[core] [Channel #4] original dial target is: \"unix:///run/containerd/containerd.sock\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610333827+08:00" level=info msg="[core] [Channel #4] parsed dial target is: {Scheme:unix Authority: Endpoint:run/containerd/containerd.sock URL:{Scheme:unix Opaque: User: Host: Path:/run/containerd/containerd.sock RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610384166+08:00" level=info msg="[core] [Channel #4] Channel authority set to \"localhost\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610487153+08:00" level=info msg="[core] [Channel #4] Resolver state updated: {\n  \"Addresses\": [\n    {\n      \"Addr\": \"/run/containerd/containerd.sock\",\n      \"ServerName\": \"\",\n      \"Attributes\": {},\n      \"BalancerAttributes\": null,\n      \"Type\": 0,\n      \"Metadata\": null\n    }\n  ],\n  \"ServiceConfig\": null,\n  \"Attributes\": null\n} (resolver returned new addresses)" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610582992+08:00" level=info msg="[core] [Channel #4] Channel switches to new LB policy \"pick_first\"" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610680353+08:00" level=info msg="[core] [Channel #4 SubChannel #5] Subchannel created" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610790691+08:00" level=info msg="[core] [Channel #4 SubChannel #5] Subchannel Connectivity change to CONNECTING" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610900657+08:00" level=info msg="[core] [Channel #4 SubChannel #5] Subchannel picks a new address \"/run/containerd/containerd.sock\" to connect" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.610912900+08:00" level=info msg="[core] [Channel #4] Channel Connectivity change to CONNECTING" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.611394690+08:00" level=info msg="[core] [Channel #4 SubChannel #5] Subchannel Connectivity change to READY" module=grpc
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.611450662+08:00" level=info msg="[core] [Channel #4] Channel Connectivity change to READY" module=grpc
+Feb 25 12:07:22 potato systemd[1]: var-lib-docker-overlay2-check\x2doverlayfs\x2dsupport1047089579-merged.mount: Succeeded.
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.694644990+08:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Feb 25 12:07:22 potato systemd[1]: var-lib-docker-overlay2-metacopy\x2dcheck1222382464-merged.mount: Succeeded.
+Feb 25 12:07:22 potato dockerd[597]: time="2023-02-25T12:07:22.846457312+08:00" level=info msg="Loading containers: start."
+Feb 25 12:07:22 potato kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Feb 25 12:07:22 potato kernel: Bridge firewalling registered
+Feb 25 12:07:23 potato kernel: Initializing XFRM netlink socket
+Feb 25 12:07:23 potato systemd-udevd[261]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato dockerd[597]: time="2023-02-25T12:07:23.392347436+08:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Feb 25 12:07:23 potato kernel: docker0: port 1(vethee9ea58) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 1(vethee9ea58) entered disabled state
+Feb 25 12:07:23 potato kernel: device vethee9ea58 entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 1(vethee9ea58) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 1(vethee9ea58) entered forwarding state
+Feb 25 12:07:23 potato kernel: docker0: port 1(vethee9ea58) entered disabled state
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[278]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[267]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:23 potato systemd-udevd[283]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[283]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered blocking state
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered disabled state
+Feb 25 12:07:23 potato kernel: device vethe8ec0bd entered promiscuous mode
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered blocking state
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered forwarding state
+Feb 25 12:07:23 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br-5f9f87cdfd9c: link becomes ready
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered disabled state
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[278]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: docker0: port 2(vethedeef53) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 2(vethedeef53) entered disabled state
+Feb 25 12:07:23 potato kernel: device vethedeef53 entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 2(vethedeef53) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 2(vethedeef53) entered forwarding state
+Feb 25 12:07:23 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): docker0: link becomes ready
+Feb 25 12:07:23 potato kernel: docker0: port 2(vethedeef53) entered disabled state
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered blocking state
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered disabled state
+Feb 25 12:07:23 potato systemd-udevd[281]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[274]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: device vethe17057d entered promiscuous mode
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered blocking state
+Feb 25 12:07:23 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered forwarding state
+Feb 25 12:07:23 potato systemd-udevd[274]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:23 potato systemd-udevd[281]: Using default interface naming scheme 'v247'.
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: docker0: port 3(veth4b5604f) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 3(veth4b5604f) entered disabled state
+Feb 25 12:07:23 potato kernel: device veth4b5604f entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 3(veth4b5604f) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 3(veth4b5604f) entered forwarding state
+Feb 25 12:07:23 potato kernel: docker0: port 4(veth7fa6ca2) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 4(veth7fa6ca2) entered disabled state
+Feb 25 12:07:23 potato kernel: device veth7fa6ca2 entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 4(veth7fa6ca2) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 4(veth7fa6ca2) entered forwarding state
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798324266+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798441985+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798507472+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.799727711+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3 pid=948 runtime=io.containerd.runc.v2
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798313732+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798445469+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.798494053+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.800500300+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113 pid=947 runtime=io.containerd.runc.v2
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: docker0: port 5(vethe343af2) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 5(vethe343af2) entered disabled state
+Feb 25 12:07:23 potato kernel: device vethe343af2 entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 5(vethe343af2) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 5(vethe343af2) entered forwarding state
+Feb 25 12:07:23 potato kernel: docker0: port 6(vethd887e5b) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 6(vethd887e5b) entered disabled state
+Feb 25 12:07:23 potato kernel: device vethd887e5b entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 6(vethd887e5b) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 6(vethd887e5b) entered forwarding state
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.882554872+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.882782861+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.882917131+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.884803222+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5 pid=1023 runtime=io.containerd.runc.v2
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.896815445+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.896974498+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.897042337+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:23 potato containerd[586]: time="2023-02-25T12:07:23.897935369+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc pid=1039 runtime=io.containerd.runc.v2
+Feb 25 12:07:23 potato systemd[1]: run-docker-runtime\x2drunc-moby-658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3-runc.mRIq5S.mount: Succeeded.
+Feb 25 12:07:23 potato systemd-udevd[267]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd-udevd[261]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: docker0: port 7(veth9b1937f) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 7(veth9b1937f) entered disabled state
+Feb 25 12:07:23 potato kernel: device veth9b1937f entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 7(veth9b1937f) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 7(veth9b1937f) entered forwarding state
+Feb 25 12:07:23 potato systemd[1]: Started libcontainer container 0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113.
+Feb 25 12:07:23 potato systemd[1]: Started libcontainer container 658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3.
+Feb 25 12:07:23 potato systemd-udevd[278]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato systemd[1]: Started libcontainer container 294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc.
+Feb 25 12:07:23 potato systemd-udevd[283]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 12:07:23 potato kernel: docker0: port 8(veth78e3464) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 8(veth78e3464) entered disabled state
+Feb 25 12:07:23 potato kernel: device veth78e3464 entered promiscuous mode
+Feb 25 12:07:23 potato kernel: docker0: port 8(veth78e3464) entered blocking state
+Feb 25 12:07:23 potato kernel: docker0: port 8(veth78e3464) entered forwarding state
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5.
+Feb 25 12:07:24 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 3(veth4b5604f) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 4(veth7fa6ca2) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 5(vethe343af2) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 6(vethd887e5b) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 7(veth9b1937f) entered disabled state
+Feb 25 12:07:24 potato kernel: docker0: port 8(veth78e3464) entered disabled state
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.180611169+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.180789286+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.180836303+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.181274306+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55 pid=1234 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.226649702+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.226891734+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.226989320+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.234272584+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e pid=1289 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.250192862+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.250346784+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.250388378+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.250744500+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9 pid=1296 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container 115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9.
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container 538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55.
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container 5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e.
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.341866080+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.342099449+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.342181134+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.342691008+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3 pid=1368 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.382330064+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.382578262+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.382670055+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.383427164+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19 pid=1433 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.474219597+08:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.474552798+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.474692613+08:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+Feb 25 12:07:24 potato containerd[586]: time="2023-02-25T12:07:24.476347379+08:00" level=info msg="starting signal loop" namespace=moby path=/run/containerd/io.containerd.runtime.v2.task/moby/1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2 pid=1478 runtime=io.containerd.runc.v2
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3.
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19.
+Feb 25 12:07:24 potato systemd[1]: Started libcontainer container 1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2.
+Feb 25 12:07:24 potato kernel: eth0: renamed from veth946017a
+Feb 25 12:07:24 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethedeef53: link becomes ready
+Feb 25 12:07:24 potato kernel: docker0: port 2(vethedeef53) entered blocking state
+Feb 25 12:07:24 potato kernel: docker0: port 2(vethedeef53) entered forwarding state
+Feb 25 12:07:24 potato kernel: eth0: renamed from veth9d411f1
+Feb 25 12:07:24 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethee9ea58: link becomes ready
+Feb 25 12:07:24 potato kernel: docker0: port 1(vethee9ea58) entered blocking state
+Feb 25 12:07:24 potato kernel: docker0: port 1(vethee9ea58) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from veth1aeb8d9
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth7fa6ca2: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 4(veth7fa6ca2) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 4(veth7fa6ca2) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from vethbaea579
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethd887e5b: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 6(vethd887e5b) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 6(vethd887e5b) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from veth5f5786b
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth78e3464: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 8(veth78e3464) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 8(veth78e3464) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from vethad22d4f
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethe343af2: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 5(vethe343af2) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 5(vethe343af2) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from vethd0b8ff9
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth4b5604f: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 3(veth4b5604f) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 3(veth4b5604f) entered forwarding state
+Feb 25 12:07:25 potato kernel: eth0: renamed from veth9ea6c1e
+Feb 25 12:07:25 potato kernel: eth0: renamed from vethe12d27a
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth9b1937f: link becomes ready
+Feb 25 12:07:25 potato kernel: docker0: port 7(veth9b1937f) entered blocking state
+Feb 25 12:07:25 potato kernel: docker0: port 7(veth9b1937f) entered forwarding state
+Feb 25 12:07:25 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethe8ec0bd: link becomes ready
+Feb 25 12:07:25 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered blocking state
+Feb 25 12:07:25 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered forwarding state
+Feb 25 12:07:26 potato kernel: eth0: renamed from vethc22eb42
+Feb 25 12:07:26 potato kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethe17057d: link becomes ready
+Feb 25 12:07:26 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered blocking state
+Feb 25 12:07:26 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered forwarding state
+Feb 25 12:07:26 potato dockerd[597]: time="2023-02-25T12:07:26.197786702+08:00" level=info msg="Loading containers: done."
+Feb 25 12:07:26 potato systemd[1]: var-lib-docker-overlay2-opaque\x2dbug\x2dcheck1420723284-merged.mount: Succeeded.
+Feb 25 12:07:26 potato systemd[1]: systemd-rfkill.service: Succeeded.
+Feb 25 12:07:26 potato dockerd[597]: time="2023-02-25T12:07:26.386948628+08:00" level=info msg="Docker daemon" commit=bc3805a graphdriver=overlay2 version=23.0.1
+Feb 25 12:07:26 potato dockerd[597]: time="2023-02-25T12:07:26.387570393+08:00" level=info msg="Daemon has completed initialization"
+Feb 25 12:07:26 potato dockerd[597]: time="2023-02-25T12:07:26.456166789+08:00" level=info msg="[core] [Server #7] Server created" module=grpc
+Feb 25 12:07:26 potato systemd[1]: Started Docker Application Container Engine.
+Feb 25 12:07:26 potato systemd[1]: Reached target Multi-User System.
+Feb 25 12:07:26 potato systemd[1]: Reached target Graphical Interface.
+Feb 25 12:07:26 potato systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Feb 25 12:07:26 potato systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Feb 25 12:07:26 potato systemd[1]: Finished Update UTMP about System Runlevel Changes.
+Feb 25 12:07:26 potato systemd[1]: Startup finished in 4.126s (kernel) + 10.279s (userspace) = 14.405s.
+Feb 25 12:07:26 potato dockerd[597]: time="2023-02-25T12:07:26.552001653+08:00" level=info msg="API listen on /run/docker.sock"
+Feb 25 12:07:39 potato login[585]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Feb 25 12:07:39 potato systemd[1]: Created slice User Slice of UID 0.
+Feb 25 12:07:39 potato systemd[1]: Starting User Runtime Directory /run/user/0...
+Feb 25 12:07:39 potato systemd-logind[400]: New session 1 of user root.
+Feb 25 12:07:39 potato systemd[1]: Finished User Runtime Directory /run/user/0.
+Feb 25 12:07:39 potato systemd[1]: Starting User Manager for UID 0...
+Feb 25 12:07:39 potato systemd[3821]: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 12:07:39 potato systemd[3821]: Queued start job for default target Main User Target.
+Feb 25 12:07:39 potato systemd[3821]: Created slice User Application Slice.
+Feb 25 12:07:39 potato systemd[3821]: Reached target Paths.
+Feb 25 12:07:39 potato systemd[3821]: Reached target Timers.
+Feb 25 12:07:39 potato systemd[3821]: Starting D-Bus User Message Bus Socket.
+Feb 25 12:07:39 potato systemd[3821]: Listening on GnuPG network certificate management daemon.
+Feb 25 12:07:39 potato systemd[3821]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Feb 25 12:07:39 potato systemd[3821]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Feb 25 12:07:39 potato systemd[3821]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Feb 25 12:07:39 potato systemd[3821]: Listening on GnuPG cryptographic agent and passphrase cache.
+Feb 25 12:07:39 potato systemd[3821]: Listening on D-Bus User Message Bus Socket.
+Feb 25 12:07:39 potato systemd[3821]: Reached target Sockets.
+Feb 25 12:07:39 potato systemd[3821]: Reached target Basic System.
+Feb 25 12:07:39 potato systemd[3821]: Reached target Main User Target.
+Feb 25 12:07:39 potato systemd[3821]: Startup finished in 297ms.
+Feb 25 12:07:39 potato systemd[1]: Started User Manager for UID 0.
+Feb 25 12:07:39 potato systemd[1]: Started Session 1 of user root.
+Feb 25 12:07:39 potato login[3838]: ROOT LOGIN  on '/dev/tty1'
+Feb 25 12:07:48 potato systemd-timesyncd[385]: Initial synchronization to time server [2001:e68:58ad:8600:8b95:d3d:ef3d:e05d]:123 (2.debian.pool.ntp.org).
+Feb 25 12:07:51 potato systemd[1]: systemd-hostnamed.service: Succeeded.
+Feb 25 12:08:06 potato systemd-logind[400]: Lid closed.
+Feb 25 12:12:18 potato anacron[395]: Job `cron.daily' started
+Feb 25 12:12:18 potato anacron[3988]: Updated timestamp for job `cron.daily' to 2023-02-25
+Feb 25 12:12:18 potato anacron[395]: Job `cron.daily' terminated
+Feb 25 12:17:01 potato CRON[4079]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 12:17:01 potato CRON[4080]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 12:17:01 potato CRON[4079]: pam_unix(cron:session): session closed for user root
+Feb 25 12:17:18 potato anacron[395]: Job `cron.weekly' started
+Feb 25 12:17:18 potato anacron[4089]: Updated timestamp for job `cron.weekly' to 2023-02-25
+Feb 25 12:17:18 potato anacron[395]: Job `cron.weekly' terminated
+Feb 25 12:17:18 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 12:17:18 potato anacron[395]: Normal exit (2 jobs run)
+Feb 25 12:22:18 potato systemd[1]: Starting Cleanup of Temporary Directories...
+Feb 25 12:22:18 potato systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Feb 25 12:22:18 potato systemd[1]: Finished Cleanup of Temporary Directories.
+Feb 25 12:30:01 potato CRON[4281]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 12:30:01 potato CRON[4282]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 12:30:01 potato CRON[4281]: pam_unix(cron:session): session closed for user root
+Feb 25 12:33:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 12:33:58 potato anacron[4340]: Anacron 2.3 started on 2023-02-25
+Feb 25 12:33:58 potato anacron[4340]: Normal exit (0 jobs run)
+Feb 25 12:33:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 13:17:01 potato CRON[4895]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 13:17:01 potato CRON[4896]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 13:17:01 potato CRON[4895]: pam_unix(cron:session): session closed for user root
+Feb 25 13:30:01 potato CRON[5082]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 13:30:01 potato CRON[5083]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 13:30:01 potato CRON[5082]: pam_unix(cron:session): session closed for user root
+Feb 25 13:31:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 13:31:58 potato anacron[5108]: Anacron 2.3 started on 2023-02-25
+Feb 25 13:31:58 potato anacron[5108]: Normal exit (0 jobs run)
+Feb 25 13:31:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 14:17:01 potato CRON[5690]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 14:17:01 potato CRON[5691]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 14:17:01 potato CRON[5690]: pam_unix(cron:session): session closed for user root
+Feb 25 14:30:01 potato CRON[5876]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 14:30:01 potato CRON[5877]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 14:30:01 potato CRON[5876]: pam_unix(cron:session): session closed for user root
+Feb 25 14:30:10 potato systemd[1]: Started Run anacron jobs.
+Feb 25 14:30:10 potato anacron[5880]: Anacron 2.3 started on 2023-02-25
+Feb 25 14:30:10 potato anacron[5880]: Normal exit (0 jobs run)
+Feb 25 14:30:10 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 15:17:01 potato CRON[6518]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 15:17:01 potato CRON[6520]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 15:17:01 potato CRON[6518]: pam_unix(cron:session): session closed for user root
+Feb 25 15:30:01 potato CRON[6712]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 15:30:01 potato CRON[6713]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 15:30:01 potato CRON[6712]: pam_unix(cron:session): session closed for user root
+Feb 25 15:34:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 15:34:58 potato anacron[6779]: Anacron 2.3 started on 2023-02-25
+Feb 25 15:34:58 potato anacron[6779]: Normal exit (0 jobs run)
+Feb 25 15:34:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 16:17:01 potato CRON[7365]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 16:17:01 potato CRON[7366]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 16:17:01 potato CRON[7365]: pam_unix(cron:session): session closed for user root
+Feb 25 16:30:01 potato CRON[7556]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 16:30:01 potato CRON[7557]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 16:30:01 potato CRON[7556]: pam_unix(cron:session): session closed for user root
+Feb 25 16:30:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 16:30:58 potato anacron[7567]: Anacron 2.3 started on 2023-02-25
+Feb 25 16:30:58 potato anacron[7567]: Normal exit (0 jobs run)
+Feb 25 16:30:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 17:12:58 potato systemd[1]: Starting Daily apt download activities...
+Feb 25 17:12:58 potato systemd[1]: apt-daily.service: Succeeded.
+Feb 25 17:12:58 potato systemd[1]: Finished Daily apt download activities.
+Feb 25 17:17:01 potato CRON[8222]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 17:17:01 potato CRON[8223]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 17:17:01 potato CRON[8222]: pam_unix(cron:session): session closed for user root
+Feb 25 17:30:01 potato CRON[8403]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 17:30:01 potato CRON[8404]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 17:30:01 potato CRON[8403]: pam_unix(cron:session): session closed for user root
+Feb 25 17:31:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 17:31:58 potato anacron[8422]: Anacron 2.3 started on 2023-02-25
+Feb 25 17:31:58 potato anacron[8422]: Normal exit (0 jobs run)
+Feb 25 17:31:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 18:17:01 potato CRON[9013]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 18:17:01 potato CRON[9014]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 18:17:01 potato CRON[9013]: pam_unix(cron:session): session closed for user root
+Feb 25 18:30:01 potato CRON[9199]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 18:30:01 potato CRON[9200]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 18:30:01 potato CRON[9199]: pam_unix(cron:session): session closed for user root
+Feb 25 18:34:10 potato systemd[1]: Started Run anacron jobs.
+Feb 25 18:34:10 potato anacron[9254]: Anacron 2.3 started on 2023-02-25
+Feb 25 18:34:10 potato anacron[9254]: Normal exit (0 jobs run)
+Feb 25 18:34:10 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 19:17:01 potato CRON[9818]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 19:17:01 potato CRON[9819]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 19:17:01 potato CRON[9818]: pam_unix(cron:session): session closed for user root
+Feb 25 19:30:01 potato CRON[10002]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 19:30:01 potato CRON[10003]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Feb 25 19:30:01 potato CRON[10002]: pam_unix(cron:session): session closed for user root
+Feb 25 19:32:58 potato systemd[1]: Started Run anacron jobs.
+Feb 25 19:32:58 potato anacron[10049]: Anacron 2.3 started on 2023-02-25
+Feb 25 19:32:58 potato anacron[10049]: Normal exit (0 jobs run)
+Feb 25 19:32:58 potato systemd[1]: anacron.service: Succeeded.
+Feb 25 20:17:01 potato CRON[10622]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Feb 25 20:17:01 potato CRON[10623]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 25 20:17:01 potato CRON[10622]: pam_unix(cron:session): session closed for user root
+Feb 25 20:22:16 potato systemd-logind[400]: Lid opened.
+Feb 25 20:22:23 potato systemd[1]: Stopping Session 1 of user root.
+Feb 25 20:22:23 potato systemd[1]: Removed slice system-modprobe.slice.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Bluetooth.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Graphical Interface.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Multi-User System.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Login Prompts.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Smart Card.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Sound Card.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Timers.
+Feb 25 20:22:23 potato systemd[1]: anacron.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Trigger anacron every hour.
+Feb 25 20:22:23 potato systemd[1]: apt-daily-upgrade.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Daily apt upgrade and clean activities.
+Feb 25 20:22:23 potato systemd[1]: apt-daily.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Daily apt download activities.
+Feb 25 20:22:23 potato systemd[1]: e2scrub_all.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems.
+Feb 25 20:22:23 potato systemd[1]: fstrim.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Discard unused blocks once a week.
+Feb 25 20:22:23 potato systemd[1]: logrotate.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Daily rotation of log files.
+Feb 25 20:22:23 potato systemd[1]: man-db.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Daily man-db regeneration.
+Feb 25 20:22:23 potato systemd[1]: systemd-tmpfiles-clean.timer: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+Feb 25 20:22:23 potato systemd[1]: Stopped target System Time Synchronized.
+Feb 25 20:22:23 potato systemd[1]: systemd-rfkill.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Feb 25 20:22:23 potato bluetoothd[484]: Terminating
+Feb 25 20:22:23 potato systemd[1]: Stopping Bluetooth service...
+Feb 25 20:22:23 potato dockerd[597]: time="2023-02-25T20:22:23.199134105+08:00" level=info msg="Processing signal 'terminated'"
+Feb 25 20:22:23 potato systemd[1]: Stopping Regular background program processing daemon...
+Feb 25 20:22:23 potato rsyslogd[399]: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="399" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Feb 25 20:22:23 potato systemd[1]: Stopping Docker Application Container Engine...
+Feb 25 20:22:23 potato sshd[587]: Received signal 15; terminating.
+Feb 25 20:22:23 potato systemd[1]: Stopping Getty on tty1...
+Feb 25 20:22:23 potato bluetoothd[484]: Stopping SDP server
+Feb 25 20:22:23 potato systemd[1]: Stopping System Logging Service...
+Feb 25 20:22:23 potato bluetoothd[484]: Exit
+Feb 25 20:22:23 potato systemd[1]: Stopping OpenBSD Secure Shell server...
+Feb 25 20:22:23 potato systemd[1]: Stopping Load/Save Random Seed...
+Feb 25 20:22:23 potato systemd[1]: cron.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Regular background program processing daemon.
+Feb 25 20:22:23 potato systemd[1]: rsyslog.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped System Logging Service.
+Feb 25 20:22:23 potato systemd[1]: bluetooth.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Bluetooth service.
+Feb 25 20:22:23 potato systemd[1]: getty@tty1.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Getty on tty1.
+Feb 25 20:22:23 potato systemd[1]: ssh.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped OpenBSD Secure Shell server.
+Feb 25 20:22:23 potato systemd[1]: systemd-random-seed.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Load/Save Random Seed.
+Feb 25 20:22:23 potato systemd[1]: session-1.scope: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Session 1 of user root.
+Feb 25 20:22:23 potato systemd[1]: session-1.scope: Consumed 31.587s CPU time.
+Feb 25 20:22:23 potato systemd[1]: docker-538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55.scope: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: docker-538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55.scope: Consumed 2min 27.995s CPU time.
+Feb 25 20:22:23 potato systemd[1]: Removed slice system-getty.slice.
+Feb 25 20:22:23 potato systemd[1]: Stopping User Login Management...
+Feb 25 20:22:23 potato systemd[3821]: Stopped target Main User Target.
+Feb 25 20:22:23 potato systemd[3821]: Stopped target Basic System.
+Feb 25 20:22:23 potato systemd[3821]: Stopped target Paths.
+Feb 25 20:22:23 potato systemd[3821]: Stopped target Sockets.
+Feb 25 20:22:23 potato systemd[3821]: Stopped target Timers.
+Feb 25 20:22:23 potato systemd[3821]: dbus.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed D-Bus User Message Bus Socket.
+Feb 25 20:22:23 potato systemd[3821]: dirmngr.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed GnuPG network certificate management daemon.
+Feb 25 20:22:23 potato systemd[3821]: gpg-agent-browser.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Feb 25 20:22:23 potato systemd[3821]: gpg-agent-extra.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Feb 25 20:22:23 potato systemd[3821]: gpg-agent-ssh.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Feb 25 20:22:23 potato systemd[3821]: gpg-agent.socket: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Closed GnuPG cryptographic agent and passphrase cache.
+Feb 25 20:22:23 potato systemd[3821]: Removed slice User Application Slice.
+Feb 25 20:22:23 potato systemd[3821]: Reached target Shutdown.
+Feb 25 20:22:23 potato systemd[3821]: systemd-exit.service: Succeeded.
+Feb 25 20:22:23 potato systemd[3821]: Finished Exit the Session.
+Feb 25 20:22:23 potato systemd[3821]: Reached target Exit the Session.
+Feb 25 20:22:23 potato systemd[1]: Stopping User Manager for UID 0...
+Feb 25 20:22:23 potato systemd[1]: docker-115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9.scope: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: docker-115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9.scope: Consumed 10.985s CPU time.
+Feb 25 20:22:23 potato systemd-logind[400]: Session 1 logged out. Waiting for processes to exit.
+Feb 25 20:22:23 potato systemd[1]: user@0.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped User Manager for UID 0.
+Feb 25 20:22:23 potato systemd[1]: Stopping User Runtime Directory /run/user/0...
+Feb 25 20:22:23 potato systemd[1]: run-user-0.mount: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Unmounted /run/user/0.
+Feb 25 20:22:23 potato systemd[1]: user-runtime-dir@0.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped User Runtime Directory /run/user/0.
+Feb 25 20:22:23 potato systemd[1]: Removed slice User Slice of UID 0.
+Feb 25 20:22:23 potato systemd[1]: user-0.slice: Consumed 31.923s CPU time.
+Feb 25 20:22:23 potato systemd[1]: Stopping Permit User Sessions...
+Feb 25 20:22:23 potato systemd[1]: systemd-logind.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped User Login Management.
+Feb 25 20:22:23 potato systemd[1]: systemd-user-sessions.service: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Stopped Permit User Sessions.
+Feb 25 20:22:23 potato systemd[1]: Stopped target Remote File Systems.
+Feb 25 20:22:23 potato dockerd[597]: time="2023-02-25T20:22:23.406123458+08:00" level=info msg="ignoring event" container=538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.407089786+08:00" level=info msg="shim disconnected" id=538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.408410783+08:00" level=warning msg="cleaning up after shim disconnected" id=538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55 namespace=moby
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.408821425+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:23 potato dockerd[597]: time="2023-02-25T20:22:23.500253081+08:00" level=info msg="ignoring event" container=115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.500864881+08:00" level=info msg="shim disconnected" id=115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.500975111+08:00" level=warning msg="cleaning up after shim disconnected" id=115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9 namespace=moby
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.501010500+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.543401748+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:23+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=10944 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:23 potato dockerd[597]: time="2023-02-25T20:22:23.544920605+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=538375da4ae07b202885f4d2ac5dc959eb6f692f95da5b600fc4a11af11a3b55 daemonShuttingDown=true error="restart canceled" execDuration=8h14m57.923446296s exitStatus="{0 false 2023-02-25 12:22:23.261941439 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:23 potato kernel: docker0: port 6(vethd887e5b) entered disabled state
+Feb 25 20:22:23 potato kernel: vethbaea579: renamed from eth0
+Feb 25 20:22:23 potato containerd[586]: time="2023-02-25T20:22:23.602283252+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:23+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11069 runtime=io.containerd.runc.v2\ntime=\"2023-02-25T20:22:23+08:00\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:23 potato dockerd[597]: time="2023-02-25T20:22:23.603914725+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=115b83f82b7c03f720f69ff970b653bd59e61dfeb116f5d00180ba3f61c606a9 daemonShuttingDown=true error="restart canceled" execDuration=8h14m58.155456744s exitStatus="{2 false 2023-02-25 12:22:23.2951455 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:23 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:23 potato systemd-udevd[11147]: Using default interface naming scheme 'v247'.
+Feb 25 20:22:23 potato kernel: docker0: port 6(vethd887e5b) entered disabled state
+Feb 25 20:22:23 potato kernel: device vethd887e5b left promiscuous mode
+Feb 25 20:22:23 potato kernel: docker0: port 6(vethd887e5b) entered disabled state
+Feb 25 20:22:23 potato systemd-udevd[11147]: vethbaea579: Failed to query device driver: No such device
+Feb 25 20:22:23 potato systemd-udevd[11147]: vethbaea579: Failed to get link config: No such device
+Feb 25 20:22:23 potato systemd[1]: run-docker-netns-c29f16423001.mount: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Unmounted /run/docker/netns/c29f16423001.
+Feb 25 20:22:23 potato systemd[1]: var-lib-docker-overlay2-56cece70cc704f97a85fd3fac9cadd05504c5f8532d46ad358853ef4dd0349e8-merged.mount: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Unmounted /var/lib/docker/overlay2/56cece70cc704f97a85fd3fac9cadd05504c5f8532d46ad358853ef4dd0349e8/merged.
+Feb 25 20:22:23 potato kernel: docker0: port 4(veth7fa6ca2) entered disabled state
+Feb 25 20:22:23 potato kernel: veth1aeb8d9: renamed from eth0
+Feb 25 20:22:23 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:23 potato kernel: docker0: port 4(veth7fa6ca2) entered disabled state
+Feb 25 20:22:23 potato kernel: device veth7fa6ca2 left promiscuous mode
+Feb 25 20:22:23 potato kernel: docker0: port 4(veth7fa6ca2) entered disabled state
+Feb 25 20:22:23 potato systemd-udevd[11147]: veth1aeb8d9: Failed to query device driver: No such device
+Feb 25 20:22:23 potato systemd-udevd[11147]: veth1aeb8d9: Failed to get link config: No such device
+Feb 25 20:22:23 potato systemd[1]: run-docker-netns-5395c6e540be.mount: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Unmounted /run/docker/netns/5395c6e540be.
+Feb 25 20:22:23 potato systemd[1]: var-lib-docker-overlay2-09929a194d6a2d87e3e5f3ea0440b6cf8c55a18f600449c5604b882e2da09631-merged.mount: Succeeded.
+Feb 25 20:22:23 potato systemd[1]: Unmounted /var/lib/docker/overlay2/09929a194d6a2d87e3e5f3ea0440b6cf8c55a18f600449c5604b882e2da09631/merged.
+Feb 25 20:22:26 potato systemd[1]: docker-fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19.scope: Succeeded.
+Feb 25 20:22:26 potato systemd[1]: docker-fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19.scope: Consumed 4min 13.319s CPU time.
+Feb 25 20:22:26 potato containerd[586]: time="2023-02-25T20:22:26.695473110+08:00" level=info msg="shim disconnected" id=fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19
+Feb 25 20:22:26 potato containerd[586]: time="2023-02-25T20:22:26.695581826+08:00" level=warning msg="cleaning up after shim disconnected" id=fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19 namespace=moby
+Feb 25 20:22:26 potato containerd[586]: time="2023-02-25T20:22:26.695620627+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:26 potato containerd[586]: time="2023-02-25T20:22:26.709679748+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:26+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11426 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:26 potato dockerd[597]: time="2023-02-25T20:22:26.695574712+08:00" level=info msg="ignoring event" container=fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:26 potato dockerd[597]: time="2023-02-25T20:22:26.710672384+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=fd8394c3512fdfce654e8f6bbc2d8d8b0b63b3cf8fa33b892a3d75ee20b93e19 daemonShuttingDown=true error="restart canceled" execDuration=8h15m0.974019821s exitStatus="{0 false 2023-02-25 12:22:26.649752684 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:26 potato kernel: docker0: port 8(veth78e3464) entered disabled state
+Feb 25 20:22:26 potato kernel: veth5f5786b: renamed from eth0
+Feb 25 20:22:26 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:26 potato kernel: docker0: port 8(veth78e3464) entered disabled state
+Feb 25 20:22:26 potato kernel: device veth78e3464 left promiscuous mode
+Feb 25 20:22:26 potato kernel: docker0: port 8(veth78e3464) entered disabled state
+Feb 25 20:22:26 potato systemd[1]: run-docker-netns-c28106e71716.mount: Succeeded.
+Feb 25 20:22:26 potato systemd-udevd[11147]: veth5f5786b: Failed to query device driver: No such device
+Feb 25 20:22:26 potato systemd-udevd[11147]: veth5f5786b: Failed to get link config: No such device
+Feb 25 20:22:26 potato systemd[1]: Unmounted /run/docker/netns/c28106e71716.
+Feb 25 20:22:26 potato systemd[1]: var-lib-docker-overlay2-30d8b2bd54e6ba4fb443bc3e6e84d00eeee85ac29fa1d1e8dfb23a4d0880818b-merged.mount: Succeeded.
+Feb 25 20:22:26 potato systemd[1]: Unmounted /var/lib/docker/overlay2/30d8b2bd54e6ba4fb443bc3e6e84d00eeee85ac29fa1d1e8dfb23a4d0880818b/merged.
+Feb 25 20:22:27 potato systemd[1]: docker-baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3.scope: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: docker-baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3.scope: Consumed 2min 8.298s CPU time.
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.352263847+08:00" level=info msg="ignoring event" container=baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.352352319+08:00" level=info msg="shim disconnected" id=baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.352444395+08:00" level=warning msg="cleaning up after shim disconnected" id=baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3 namespace=moby
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.352475320+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.365170542+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:27+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11465 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.366182399+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=baef7e68bcffb96057b8718ed323d39c36343cc0446e9d906b9c75e237171fb3 daemonShuttingDown=true error="restart canceled" execDuration=8h15m1.544437574s exitStatus="{0 false 2023-02-25 12:22:27.324270587 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:27 potato kernel: docker0: port 5(vethe343af2) entered disabled state
+Feb 25 20:22:27 potato kernel: vethad22d4f: renamed from eth0
+Feb 25 20:22:27 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:27 potato kernel: docker0: port 5(vethe343af2) entered disabled state
+Feb 25 20:22:27 potato kernel: device vethe343af2 left promiscuous mode
+Feb 25 20:22:27 potato kernel: docker0: port 5(vethe343af2) entered disabled state
+Feb 25 20:22:27 potato systemd-udevd[11147]: vethad22d4f: Failed to query device driver: No such device
+Feb 25 20:22:27 potato systemd-udevd[11147]: vethad22d4f: Failed to get link config: No such device
+Feb 25 20:22:27 potato systemd[1]: run-docker-netns-a4f5c5e85022.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /run/docker/netns/a4f5c5e85022.
+Feb 25 20:22:27 potato systemd[1]: var-lib-docker-overlay2-abd8c6ef410605cbefcb84d264cda8d6a2adddf665e68e86ec69343a6126fc94-merged.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /var/lib/docker/overlay2/abd8c6ef410605cbefcb84d264cda8d6a2adddf665e68e86ec69343a6126fc94/merged.
+Feb 25 20:22:27 potato systemd[1]: docker-658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3.scope: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: docker-658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3.scope: Consumed 18.466s CPU time.
+Feb 25 20:22:27 potato systemd[1]: docker-294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc.scope: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: docker-294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc.scope: Consumed 1min 43.544s CPU time.
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.576563432+08:00" level=info msg="ignoring event" container=658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.577257173+08:00" level=info msg="shim disconnected" id=658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.577363140+08:00" level=warning msg="cleaning up after shim disconnected" id=658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3 namespace=moby
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.577400458+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.592822542+08:00" level=info msg="ignoring event" container=294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.592885597+08:00" level=info msg="shim disconnected" id=294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.592986980+08:00" level=warning msg="cleaning up after shim disconnected" id=294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc namespace=moby
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.593026781+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.595042066+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:27+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11522 runtime=io.containerd.runc.v2\ntime=\"2023-02-25T20:22:27+08:00\" level=warning msg=\"failed to remove runc container\" error=\"runc did not terminate successfully: exit status 255: \" runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.596280804+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=658d2a889d53a28d1de50e1ecaa6f869e4e73b893d2de76c37e4e9880ab4d0d3 daemonShuttingDown=true error="restart canceled" execDuration=8h15m1.450638563s exitStatus="{0 false 2023-02-25 12:22:27.552677843 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered disabled state
+Feb 25 20:22:27 potato kernel: vethe12d27a: renamed from eth0
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.608236421+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:27+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11535 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.609178199+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=294f889c33176cd18cf2cfc3e6c526ef7da61ed5c9d115affe95b52c97287ffc daemonShuttingDown=true error="restart canceled" execDuration=8h15m1.419593517s exitStatus="{0 false 2023-02-25 12:22:27.558240163 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:27 potato systemd[1]: docker-1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2.scope: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: docker-1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2.scope: Consumed 34.036s CPU time.
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.678379229+08:00" level=info msg="ignoring event" container=1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.678633310+08:00" level=info msg="shim disconnected" id=1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.678736070+08:00" level=warning msg="cleaning up after shim disconnected" id=1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2 namespace=moby
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.678769565+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.692286326+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:27+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11566 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.693394234+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=1186f8e2a9e7f234f8a1db7d6d5a91988cb86fda13d8ae598e5589b1da9670f2 daemonShuttingDown=true error="restart canceled" execDuration=8h15m1.550457404s exitStatus="{0 false 2023-02-25 12:22:27.6592262 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered disabled state
+Feb 25 20:22:27 potato kernel: vethc22eb42: renamed from eth0
+Feb 25 20:22:27 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered disabled state
+Feb 25 20:22:27 potato kernel: device vethe8ec0bd left promiscuous mode
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 1(vethe8ec0bd) entered disabled state
+Feb 25 20:22:27 potato systemd-udevd[11147]: ethtool: could not get ethtool features for vethe12d27a
+Feb 25 20:22:27 potato systemd-udevd[11147]: vethe12d27a: Could not set offload features, ignoring: No such device
+Feb 25 20:22:27 potato kernel: docker0: port 7(veth9b1937f) entered disabled state
+Feb 25 20:22:27 potato kernel: veth9ea6c1e: renamed from eth0
+Feb 25 20:22:27 potato systemd[1]: run-docker-netns-569a2dfe86fc.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /run/docker/netns/569a2dfe86fc.
+Feb 25 20:22:27 potato systemd[1]: var-lib-docker-overlay2-2e0a63fe36a416e5efe54e0b54edee3a72eddb34ab78958b161c06389f9c4491-merged.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /var/lib/docker/overlay2/2e0a63fe36a416e5efe54e0b54edee3a72eddb34ab78958b161c06389f9c4491/merged.
+Feb 25 20:22:27 potato systemd-udevd[11171]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered disabled state
+Feb 25 20:22:27 potato kernel: device vethe17057d left promiscuous mode
+Feb 25 20:22:27 potato kernel: br-5f9f87cdfd9c: port 2(vethe17057d) entered disabled state
+Feb 25 20:22:27 potato systemd[1]: docker-5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e.scope: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: docker-5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e.scope: Consumed 1min 10.846s CPU time.
+Feb 25 20:22:27 potato systemd-udevd[11171]: ethtool: could not get ethtool features for vethc22eb42
+Feb 25 20:22:27 potato systemd-udevd[11171]: vethc22eb42: Could not set offload features, ignoring: No such device
+Feb 25 20:22:27 potato systemd-udevd[11171]: Using default interface naming scheme 'v247'.
+Feb 25 20:22:27 potato systemd-udevd[11594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:27 potato systemd-udevd[11594]: Using default interface naming scheme 'v247'.
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.946091863+08:00" level=info msg="ignoring event" container=5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:27 potato kernel: docker0: port 7(veth9b1937f) entered disabled state
+Feb 25 20:22:27 potato kernel: device veth9b1937f left promiscuous mode
+Feb 25 20:22:27 potato kernel: docker0: port 7(veth9b1937f) entered disabled state
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.947777594+08:00" level=info msg="shim disconnected" id=5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.947891489+08:00" level=warning msg="cleaning up after shim disconnected" id=5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e namespace=moby
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.947924282+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:27 potato systemd-udevd[11147]: vethe12d27a: Failed to query device driver: No such device
+Feb 25 20:22:27 potato systemd-udevd[11147]: vethe12d27a: Failed to get link config: No such device
+Feb 25 20:22:27 potato systemd-udevd[11594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:27 potato systemd[1]: run-docker-netns-348992d289ba.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /run/docker/netns/348992d289ba.
+Feb 25 20:22:27 potato containerd[586]: time="2023-02-25T20:22:27.965996734+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:27+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11627 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:27 potato dockerd[597]: time="2023-02-25T20:22:27.967053976+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=5ded06cf8a12aa7a761b80766bd55e8edddf0afa0e8f753409ebb9748427809e daemonShuttingDown=true error="restart canceled" execDuration=8h15m2.071993759s exitStatus="{0 false 2023-02-25 12:22:27.91390756 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:27 potato systemd[1]: var-lib-docker-overlay2-9913a297c5294f6e2b12d556c4b818a8b384b26ac58c5c64d4e83948b00d58c6-merged.mount: Succeeded.
+Feb 25 20:22:27 potato systemd[1]: Unmounted /var/lib/docker/overlay2/9913a297c5294f6e2b12d556c4b818a8b384b26ac58c5c64d4e83948b00d58c6/merged.
+Feb 25 20:22:27 potato systemd-udevd[11171]: vethc22eb42: Failed to query device driver: No such device
+Feb 25 20:22:27 potato systemd-udevd[11171]: vethc22eb42: Failed to get link config: No such device
+Feb 25 20:22:28 potato systemd[1]: run-docker-netns-f18bd4686a89.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /run/docker/netns/f18bd4686a89.
+Feb 25 20:22:28 potato systemd[1]: var-lib-docker-overlay2-94e910660670b50e9ad910a381adb1b5c7934c94452bf91c9d8fda85e00aaeb6-merged.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /var/lib/docker/overlay2/94e910660670b50e9ad910a381adb1b5c7934c94452bf91c9d8fda85e00aaeb6/merged.
+Feb 25 20:22:28 potato kernel: docker0: port 3(veth4b5604f) entered disabled state
+Feb 25 20:22:28 potato kernel: vethd0b8ff9: renamed from eth0
+Feb 25 20:22:28 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:28 potato kernel: docker0: port 3(veth4b5604f) entered disabled state
+Feb 25 20:22:28 potato kernel: device veth4b5604f left promiscuous mode
+Feb 25 20:22:28 potato kernel: docker0: port 3(veth4b5604f) entered disabled state
+Feb 25 20:22:28 potato systemd-udevd[11147]: vethd0b8ff9: Failed to query device driver: No such device
+Feb 25 20:22:28 potato systemd-udevd[11147]: vethd0b8ff9: Failed to get link config: No such device
+Feb 25 20:22:28 potato systemd[1]: run-docker-netns-a6db2ea02d44.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /run/docker/netns/a6db2ea02d44.
+Feb 25 20:22:28 potato systemd[1]: var-lib-docker-overlay2-d7f402a9cd18a153bccb287e3ede125562e0db2aa4c0ed7bea9c3b4cdd459a5f-merged.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /var/lib/docker/overlay2/d7f402a9cd18a153bccb287e3ede125562e0db2aa4c0ed7bea9c3b4cdd459a5f/merged.
+Feb 25 20:22:28 potato systemd[1]: docker-0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113.scope: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: docker-0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113.scope: Consumed 3min 37.403s CPU time.
+Feb 25 20:22:28 potato systemd[1]: docker-c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5.scope: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: docker-c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5.scope: Consumed 43.914s CPU time.
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.569260668+08:00" level=info msg="ignoring event" container=c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.570011519+08:00" level=info msg="shim disconnected" id=c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.570110373+08:00" level=warning msg="cleaning up after shim disconnected" id=c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5 namespace=moby
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.570145378+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.573414248+08:00" level=info msg="ignoring event" container=0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.573405901+08:00" level=info msg="shim disconnected" id=0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.573510734+08:00" level=warning msg="cleaning up after shim disconnected" id=0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113 namespace=moby
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.573544085+08:00" level=info msg="cleaning up dead shim"
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.585009242+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:28+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11694 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.586143722+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=c3913334ea0c2e50e66e252580e0212b387b54b3e15049a83d0e68c41cf4d7f5 daemonShuttingDown=true error="restart canceled" execDuration=8h15m3.583357567s exitStatus="{0 false 2023-02-25 12:22:28.538933733 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:28 potato containerd[586]: time="2023-02-25T20:22:28.589863868+08:00" level=warning msg="cleanup warnings time=\"2023-02-25T20:22:28+08:00\" level=info msg=\"starting signal loop\" namespace=moby pid=11698 runtime=io.containerd.runc.v2\n"
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.590827359+08:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=0f50b0dcb0c89ea3ca37b0be68d3914744f259162f1735b1e5d9b92945d61113 daemonShuttingDown=true error="restart canceled" execDuration=8h15m3.515761992s exitStatus="{0 false 2023-02-25 12:22:28.518048113 +0000 UTC}" hasBeenManuallyStopped=false restartCount=0
+Feb 25 20:22:28 potato kernel: docker0: port 2(vethedeef53) entered disabled state
+Feb 25 20:22:28 potato kernel: veth946017a: renamed from eth0
+Feb 25 20:22:28 potato kernel: docker0: port 1(vethee9ea58) entered disabled state
+Feb 25 20:22:28 potato kernel: veth9d411f1: renamed from eth0
+Feb 25 20:22:28 potato systemd-udevd[11147]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:28 potato kernel: docker0: port 2(vethedeef53) entered disabled state
+Feb 25 20:22:28 potato kernel: device vethedeef53 left promiscuous mode
+Feb 25 20:22:28 potato kernel: docker0: port 2(vethedeef53) entered disabled state
+Feb 25 20:22:28 potato systemd-udevd[11594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:28 potato systemd-udevd[11594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb 25 20:22:28 potato systemd-udevd[11147]: veth946017a: Failed to query device driver: No such device
+Feb 25 20:22:28 potato systemd-udevd[11147]: veth946017a: Failed to get link config: No such device
+Feb 25 20:22:28 potato kernel: docker0: port 1(vethee9ea58) entered disabled state
+Feb 25 20:22:28 potato kernel: device vethee9ea58 left promiscuous mode
+Feb 25 20:22:28 potato kernel: docker0: port 1(vethee9ea58) entered disabled state
+Feb 25 20:22:28 potato systemd[1]: run-docker-netns-de65b62aeee0.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /run/docker/netns/de65b62aeee0.
+Feb 25 20:22:28 potato systemd[1]: var-lib-docker-overlay2-98764210a2c68858600eda73758cbfe452180782c65c3c2b418f25981fd9b758-merged.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /var/lib/docker/overlay2/98764210a2c68858600eda73758cbfe452180782c65c3c2b418f25981fd9b758/merged.
+Feb 25 20:22:28 potato systemd[1]: run-docker-netns-bb948b60a27e.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /run/docker/netns/bb948b60a27e.
+Feb 25 20:22:28 potato systemd[1]: var-lib-docker-overlay2-c0b8136ee09e6789fa3e197a29192cf33d95afeb65837909d7fe0be3f8083e1a-merged.mount: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Unmounted /var/lib/docker/overlay2/c0b8136ee09e6789fa3e197a29192cf33d95afeb65837909d7fe0be3f8083e1a/merged.
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.908463160+08:00" level=info msg="[core] [Channel #1] Channel Connectivity change to SHUTDOWN" module=grpc
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.908575662+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel Connectivity change to SHUTDOWN" module=grpc
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.908613286+08:00" level=info msg="[core] [Channel #1 SubChannel #2] Subchannel deleted" module=grpc
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.908637440+08:00" level=info msg="[core] [Channel #1] Channel deleted" module=grpc
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.908756785+08:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Feb 25 20:22:28 potato dockerd[597]: time="2023-02-25T20:22:28.909286045+08:00" level=info msg="Daemon shutdown complete"
+Feb 25 20:22:28 potato systemd[1]: docker.service: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped Docker Application Container Engine.
+Feb 25 20:22:28 potato systemd[1]: docker.service: Consumed 42.097s CPU time.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Network is Online.
+Feb 25 20:22:28 potato systemd[1]: Stopped target System Time Set.
+Feb 25 20:22:28 potato systemd[1]: Stopping containerd container runtime...
+Feb 25 20:22:28 potato systemd[1]: containerd.service: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped containerd container runtime.
+Feb 25 20:22:28 potato systemd[1]: containerd.service: Consumed 1min 27.724s CPU time.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Network.
+Feb 25 20:22:28 potato systemd[1]: Stopping Raise network interfaces...
+Feb 25 20:22:28 potato systemd[1]: Stopping WPA supplicant...
+Feb 25 20:22:28 potato systemd[1]: wpa_supplicant.service: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped WPA supplicant.
+Feb 25 20:22:28 potato systemd[1]: Stopping D-Bus System Message Bus...
+Feb 25 20:22:28 potato systemd[1]: dbus.service: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped D-Bus System Message Bus.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Basic System.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Paths.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Slices.
+Feb 25 20:22:28 potato systemd[1]: Removed slice User and Session Slice.
+Feb 25 20:22:28 potato systemd[1]: user.slice: Consumed 31.923s CPU time.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Sockets.
+Feb 25 20:22:28 potato systemd[1]: dbus.socket: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Closed D-Bus System Message Bus Socket.
+Feb 25 20:22:28 potato systemd[1]: docker.socket: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Closed Docker Socket for the API.
+Feb 25 20:22:28 potato systemd[1]: Stopped target System Initialization.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Local Encrypted Volumes.
+Feb 25 20:22:28 potato systemd[1]: systemd-ask-password-console.path: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped Dispatch Password Requests to Console Directory Watch.
+Feb 25 20:22:28 potato systemd[1]: systemd-ask-password-wall.path: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped Forward Password Requests to Wall Directory Watch.
+Feb 25 20:22:28 potato systemd[1]: Stopped target Swap.
+Feb 25 20:22:28 potato systemd[1]: syslog.socket: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Closed Syslog Socket.
+Feb 25 20:22:28 potato systemd[1]: Deactivating swap /dev/disk/by-id/ata-AGI240G06AI138_AGISABTSE1009570-part3...
+Feb 25 20:22:28 potato systemd[1]: Stopping Load/Save Screen Backlight Brightness of backlight:acpi_video0...
+Feb 25 20:22:28 potato systemd[1]: Stopping Load/Save Screen Backlight Brightness of backlight:intel_backlight...
+Feb 25 20:22:28 potato systemd[1]: Stopping Network Time Synchronization...
+Feb 25 20:22:28 potato systemd[1]: Stopping Update UTMP about System Boot/Shutdown...
+Feb 25 20:22:28 potato systemd[1]: systemd-backlight@backlight:acpi_video0.service: Succeeded.
+Feb 25 20:22:28 potato systemd[1]: Stopped Load/Save Screen Backlight Brightness of backlight:acpi_video0.
+Feb 25 20:22:28 potato systemd[1]: systemd-timesyncd.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Network Time Synchronization.
+Feb 25 20:22:29 potato systemd[1]: systemd-backlight@backlight:intel_backlight.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+Feb 25 20:22:29 potato systemd[1]: Removed slice system-systemd\x2dbacklight.slice.
+Feb 25 20:22:29 potato systemd[1]: dev-disk-by\x2did-ata\x2dAGI240G06AI138_AGISABTSE1009570\x2dpart3.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/disk/by-id/ata-AGI240G06AI138_AGISABTSE1009570-part3.
+Feb 25 20:22:29 potato wpa_supplicant[532]: wlan0: CTRL-EVENT-DISCONNECTED bssid=bc:22:28:62:62:b4 reason=3 locally_generated=1
+Feb 25 20:22:29 potato systemd[1]: dev-disk-by\x2dpath-pci\x2d0000:00:1f.2\x2data\x2d1.0\x2dpart3.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/disk/by-path/pci-0000:00:1f.2-ata-1.0-part3.
+Feb 25 20:22:29 potato systemd[1]: dev-disk-by\x2dpath-pci\x2d0000:00:1f.2\x2data\x2d1\x2dpart3.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/disk/by-path/pci-0000:00:1f.2-ata-1-part3.
+Feb 25 20:22:29 potato systemd[1]: dev-disk-by\x2dpartuuid-8678a6f6\x2d929a\x2d4790\x2da0d5\x2db844e98cb86c.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/disk/by-partuuid/8678a6f6-929a-4790-a0d5-b844e98cb86c.
+Feb 25 20:22:29 potato systemd[1]: dev-sda3.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/sda3.
+Feb 25 20:22:29 potato systemd[1]: dev-disk-by\x2duuid-a17f9fdf\x2d6e11\x2d4495\x2daaba\x2d009234f8de43.swap: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Deactivated swap /dev/disk/by-uuid/a17f9fdf-6e11-4495-aaba-009234f8de43.
+Feb 25 20:22:29 potato systemd[1]: systemd-update-utmp.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Update UTMP about System Boot/Shutdown.
+Feb 25 20:22:29 potato systemd[1]: systemd-tmpfiles-setup.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Create Volatile Files and Directories.
+Feb 25 20:22:29 potato wpa_supplicant[532]: nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+Feb 25 20:22:29 potato wpa_supplicant[532]: wlan0: CTRL-EVENT-TERMINATING
+Feb 25 20:22:29 potato systemd[1]: networking.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Raise network interfaces.
+Feb 25 20:22:29 potato systemd[1]: Stopped target Local File Systems.
+Feb 25 20:22:29 potato systemd[1]: Stopped target Network (Pre).
+Feb 25 20:22:29 potato systemd[1]: Unmounting /boot/efi...
+Feb 25 20:22:29 potato systemd[1]: systemd-sysctl.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Apply Kernel Variables.
+Feb 25 20:22:29 potato systemd[1]: systemd-modules-load.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Load Kernel Modules.
+Feb 25 20:22:29 potato systemd[1]: boot-efi.mount: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Unmounted /boot/efi.
+Feb 25 20:22:29 potato systemd[1]: Stopped target Local File Systems (Pre).
+Feb 25 20:22:29 potato systemd[1]: Reached target Unmount All Filesystems.
+Feb 25 20:22:29 potato systemd[1]: systemd-tmpfiles-setup-dev.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Create Static Device Nodes in /dev.
+Feb 25 20:22:29 potato systemd[1]: systemd-sysusers.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Create System Users.
+Feb 25 20:22:29 potato systemd[1]: systemd-remount-fs.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Stopped Remount Root and Kernel File Systems.
+Feb 25 20:22:29 potato systemd[1]: Reached target Shutdown.
+Feb 25 20:22:29 potato systemd[1]: Reached target Final Step.
+Feb 25 20:22:29 potato systemd[1]: systemd-reboot.service: Succeeded.
+Feb 25 20:22:29 potato systemd[1]: Finished Reboot.
+Feb 25 20:22:29 potato systemd[1]: Reached target Reboot.
+Feb 25 20:22:29 potato systemd[1]: Shutting down.
+Feb 25 20:22:29 potato systemd[1]: Using hardware watchdog 'iTCO_wdt', version 0, device /dev/watchdog
+Feb 25 20:22:29 potato systemd[1]: Set hardware watchdog to 10min.
+Feb 25 20:22:29 potato kernel: watchdog: watchdog0: watchdog did not stop!
+Feb 25 20:22:29 potato systemd-shutdown[1]: Syncing filesystems and block devices.
+Feb 25 20:22:29 potato systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+Feb 25 20:22:29 potato systemd-journald[240]: Journal stopped41/
