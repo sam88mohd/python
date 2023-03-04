@@ -5,3 +5,6 @@ deactivate env - deactivate
 create folder tests
 add test_xxx.py in tests folder
 
+function: test_basic()
+class: TestSimple()
+method: test_basic()
