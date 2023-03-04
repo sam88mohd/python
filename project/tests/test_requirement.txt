@@ -1,0 +1,7 @@
+create new env - python -m venv testing
+activate testing env - source testing/bin/activate
+deactivate env - deactivate
+
+create folder tests
+add test_xxx.py in tests folder
+
