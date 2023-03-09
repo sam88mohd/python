@@ -1,0 +1,2 @@
+dir("") - list of all method can be used
+help("") - list of all reference of the object
