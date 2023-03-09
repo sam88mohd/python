@@ -3,3 +3,10 @@ help("") - list of all reference of the object
 
 __init__(self)
 __str__(self) --> print(object) => set to get custom print string
+"""docstring""" in method
+help(object)
+
+always initialize mutable value in constructor(__init__)
+
+to create submodules -> create a folder -> put all py files in it. create __init__.py file
+
