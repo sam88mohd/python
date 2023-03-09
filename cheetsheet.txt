@@ -1,2 +1,5 @@
 dir("") - list of all method can be used
 help("") - list of all reference of the object
+
+__init__(self)
+__str__(self) --> print(object) => set to get custom print string
