@@ -30,3 +30,8 @@ readlines() // read a line and return a list of that line
 
 list.sort() // sort content of list directly to the list
 sorted(list) // sort content of list and create new list of sorted value
+
+os module
+os.remove("filename")
+os.rename("filename", "new_filename")
+os.path.exists("filename") 
