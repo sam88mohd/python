@@ -36,10 +36,17 @@ os.remove("filename")
 os.rename("filename", "new_filename")
 os.path.exists("filename") 
 os.path.getsize("filename") // get file size
-os.path.gettmtime("filename") // get file timestamp
+os.path.getmtime("filename") // get file timestamp
 os.path.isfile(filename)
 
 use datetime module to get readable timestamp
-datetime.datetime.timestamp(os.path.gettmstamp("filename"))
+datetime.datetime.fromtimestamp(os.path.gettmstamp("filename"))
 
 os.path.abspath("filename") // get the full path of the file
+
+os.rmdir(dir)
+os.mkdir(dir)
+
+os.listdir(dir) // return all files and subdirectory in the dir
+os.path.join(dir, name) // work for all os
+os.path.isdir(dir)
