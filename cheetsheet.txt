@@ -27,3 +27,6 @@ pareto principal - 20% of automation contribute to 80% of your daily work
 readline() // read a line from current position
 read() // read line until end from current position
 readlines() // read a line and return a list of that line 
+
+list.sort() // sort content of list directly to the list
+sorted(list) // sort content of list and create new list of sorted value
