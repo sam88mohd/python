@@ -9,4 +9,17 @@ help(object)
 always initialize mutable value in constructor(__init__)
 
 to create submodules -> create a folder -> put all py files in it. create __init__.py file
+module:
+	shutil.disk_usage
+	psutil.cpu_percent(0.5) # seconds
 
+rules of automation
+
+time to automate < time to perfom*amount of times done
+
+1 hour to create automation (60 minutes)
+5 minute a day to perform
+
+60 minute / 5 = 12 days saved when using the automation
+
+pareto principal - 20% of automation contribute to 80% of your daily work 
