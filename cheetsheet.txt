@@ -22,4 +22,8 @@ time to automate < time to perfom*amount of times done
 
 60 minute / 5 = 12 days saved when using the automation
 
-pareto principal - 20% of automation contribute to 80% of your daily work 
+pareto principal - 20% of automation contribute to 80% of your daily work
+
+readline() // read a line from current position
+read() // read line until end from current position
+readlines() // read a line and return a list of that line 
