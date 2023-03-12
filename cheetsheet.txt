@@ -50,3 +50,9 @@ os.mkdir(dir)
 os.listdir(dir) // return all files and subdirectory in the dir
 os.path.join(dir, name) // work for all os
 os.path.isdir(dir)
+
+export Fruit="fruit" // add variable to environment
+os.environ
+
+wc file // word count
+echo $? // show exit code for last program
