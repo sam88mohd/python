@@ -1,3 +1,4 @@
+
 dir("") - list of all method can be used
 help("") - list of all reference of the object
 
@@ -62,3 +63,13 @@ result = subprocess.run([], capture_output=True) - output will in arry of byte. 
 result.returncode
 result.stdout
 result.stderr
+
+os.environ is a dictionary
+os.environ.copy() - copy current evironment
+
+my_env = os.environ.copy()
+my_env["PATH"] = os.pathsep.join(["opt/myapp/", my_env["PATH"]])
+result = subprocess.run(["myapp"], env=my_env)
+
+subprocess run with secondary environment
+suprocess will lock parent process until it finish execution
