@@ -56,3 +56,9 @@ os.environ
 
 wc file // word count
 echo $? // show exit code for last program
+
+subprocess.run - use when we dont care what is the output
+result = subprocess.run([], capture_output=True) - output will in arry of byte. to convert it, use result.stdout.decode()
+result.returncode
+result.stdout
+result.stderr
