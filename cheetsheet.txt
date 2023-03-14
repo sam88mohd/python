@@ -74,5 +74,5 @@ result = subprocess.run(["myapp"], env=my_env)
 subprocess run with secondary environment
 suprocess will lock parent process until it finish execution
 
-raise - use for what we expect to happen during normal execution
+raise ValueError("msg") - use for what we expect to happen during normal execution
 assert - use for verify the condition that is not expected 
