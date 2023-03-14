@@ -10,6 +10,8 @@ import re
 def rearranged_name(name):
     pattern = re.compile(r"([\w .]*), ([\w .]*)")
     result = pattern.match(name)
+    if result == None:
+        return name
     return "{} {}".format(result[2], result[1])
 
 if __name__ == "__main__":
