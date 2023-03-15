@@ -97,7 +97,7 @@ sys.stdin // read content of pipe input
 cat haiku.txt | ./capitalize.py
 
 ctrl^c - SIGINT - interrupt the process cleanly
-ctrl^Z - SIGTERM - terminate the process un clean // fg to continue the process
-KILL - kill pid 
+ctrl^Z - SIGSTOP - terminate the process un clean // fg to continue the process
+KILL - SIGTERM - kill pid 
 ps ax | // get all running process in current computer
 grep // filter for process  
