@@ -118,3 +118,6 @@ if grep "127.0.0.1" /etc/hosts; then
 else
   echo " failed" 
 fi 
+
+if test -n $PATH; then echo "h"; fi same as:
+if [-n $PATH ]; then echo "h"; fi
