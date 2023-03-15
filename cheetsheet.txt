@@ -108,4 +108,13 @@ who // show user login
 
 glob - special char * and ?
 variable in bash: example=hello
-$example // hello  
+$example // hello
+
+$? check for exit status in bash
+bash use exit status to do conditional
+
+if grep "127.0.0.1" /etc/hosts; then
+  echo "success"
+else
+  echo " failed" 
+fi 
