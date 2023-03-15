@@ -93,4 +93,11 @@ uniq -c | // uniq word -c stand for count the word
 sort -nr | // sort numerical and reverse
 head // show print 10 line to stdin
 
-sys.stdin // read content of pipe input 
+sys.stdin // read content of pipe input
+cat haiku.txt | ./capitalize.py
+
+ctrl^c - SIGINT - interrupt the process cleanly
+ctrl^Z - SIGTERM - terminate the process un clean // fg to continue the process
+KILL - kill pid 
+ps ax | // get all running process in current computer
+grep // filter for process  
