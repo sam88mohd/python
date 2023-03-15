@@ -76,3 +76,8 @@ suprocess will lock parent process until it finish execution
 
 raise ValueError("msg") - use for what we expect to happen during normal execution
 assert - use for verify the condition that is not expected 
+
+cp ../spyder -> refer to parent folder relative to current folder
+ls -l
+ls -la
+rm * // remove all file in current dir
