@@ -100,4 +100,8 @@ ctrl^c - SIGINT - interrupt the process cleanly
 ctrl^Z - SIGSTOP - terminate the process un clean // fg to continue the process
 KILL - SIGTERM - kill pid 
 ps ax | // get all running process in current computer
-grep // filter for process  
+grep // filter for process
+
+uptime // how long computer is running
+free // show free space
+who // show user login  
