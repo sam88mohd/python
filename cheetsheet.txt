@@ -81,3 +81,16 @@ cp ../spyder -> refer to parent folder relative to current folder
 ls -l
 ls -la
 rm * // remove all file in current dir
+> // redirect the output of the script
+>> // add new line if file exists
+< // input stream 
+2> // error redirect
+ls -l | less // piping to paging command
+cat spyder.txt |
+tr ' ' '\n' | // translate ' ' to '\n'
+sort |
+uniq -c | // uniq word -c stand for count the word
+sort -nr | // sort numerical and reverse
+head // show print 10 line to stdin
+
+sys.stdin // read content of pipe input 
