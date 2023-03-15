@@ -104,4 +104,8 @@ grep // filter for process
 
 uptime // how long computer is running
 free // show free space
-who // show user login  
+who // show user login
+
+glob - special char * and ?
+variable in bash: example=hello
+$example // hello  
