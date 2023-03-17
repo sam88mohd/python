@@ -120,7 +120,7 @@ else
 fi 
 
 if test -n $PATH; then echo "h"; fi same as:
-if [-n $PATH ]; then echo "h"; fi
+if [ -n $PATH ]; then echo "h"; fi
 
 cut [option] [file] -d //delimiter seperated field
 -f //field number
