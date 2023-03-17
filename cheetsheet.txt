@@ -126,3 +126,9 @@ cut [option] [file] -d //delimiter seperated field
 -f //field number
 
 test // check file and compare value
+
+for i in 1 2 3; do echo $i; done
+
+variable="hello world"
+$variable
+$(cat) // call command in bash
