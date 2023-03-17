@@ -132,3 +132,10 @@ for i in 1 2 3; do echo $i; done
 variable="hello world"
 $variable
 $(cat) // call command in bash
+
+SETUP FOR CODING PROJECTS
+
+1. understand the problem statement // given input and desired output
+2. research // research for any module helpful for our project
+3. planning // what data type is useful // documentation the problem statement, tools to solve it, plan to attack the problem
+4. writing code 
