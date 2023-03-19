@@ -42,3 +42,9 @@ git revert // make changes - roleback previous commit
 
 git merge --abort
 
+GITHUB
+------
+
+git remote -v // check remote branch
+
+git remote show origin // show info of the remote repo
