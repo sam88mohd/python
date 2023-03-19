@@ -36,7 +36,7 @@ git mv
 
 git rm
 
-git reset // reset repo
+git reset // unstaged commit
 
 git revert // make changes - roleback previous commit
 
@@ -48,3 +48,9 @@ GITHUB
 git remote -v // check remote branch
 
 git remote show origin // show info of the remote repo
+
+git fetch // fetch remote updates but not merge
+
+git pull // fetch remote update and merge
+
+git merge // merge the remote to local manually
