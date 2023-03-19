@@ -139,3 +139,5 @@ SETUP FOR CODING PROJECTS
 2. research // research for any module helpful for our project
 3. planning // what data type is useful // documentation the problem statement, tools to solve it, plan to attack the problem
 4. writing code 
+
+sorted(fruit.items(), key = operator.itemgetter(1), reverse=True) // sort by value and reversed
