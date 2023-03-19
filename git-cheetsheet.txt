@@ -11,3 +11,34 @@ git cheetsheet
 git diff <file>
 
 git log
+
+git push origin main
+
+git status
+
+git branch // check branch
+
+git branch <branch name> // create new branch
+
+git config user.name "name"
+
+git config user.email "email"
+
+git checkout -b <branch name> // create and checkout the branch
+
+git commit -a // stage file automatically
+
+git log -p // produce patch text
+
+git add -p // allow user to interactively review patches to add to current commit
+
+git mv
+
+git rm
+
+git reset // reset repo
+
+git revert // make changes - roleback previous commit
+
+git merge --abort
+
