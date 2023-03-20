@@ -58,3 +58,5 @@ git merge // merge the remote to local manually
 git log origin/main
 
 git log -p -1 // check the last commit changes
+
+git log --graph --oneline --all // show different commit and position in the tree // usefull if commit failed
