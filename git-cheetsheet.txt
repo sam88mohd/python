@@ -70,3 +70,5 @@ MERGE BRANCH TO MASTER BRANCH // get linear commit
 3. git checkout master
 
 4. git merge branch
+
+git push --delete origin branch // delete remote branch
