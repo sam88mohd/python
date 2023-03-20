@@ -30,7 +30,7 @@ git commit -a // stage file automatically
 
 git log -p // produce patch text
 
-git add -p // allow user to interactively review patches to add to current commit
+git add -p // allow user to interactively review code before commit
 
 git mv
 
