@@ -61,7 +61,7 @@ git log -p -1 // check the last commit changes
 
 git log --graph --oneline --all // show different commit and position in the tree // usefull if commit failed
 
-MERGE BRANCH TO MASTER BRANCH // get linear commit
+MERGE BRANCH TO MASTER BRANCH // move current branch on top of branch
 
 1. git checkout <branch>
 
