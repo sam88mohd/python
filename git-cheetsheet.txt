@@ -54,3 +54,7 @@ git fetch // fetch remote updates but not merge
 git pull // fetch remote update and merge
 
 git merge // merge the remote to local manually
+
+git log origin/main
+
+git log -p -1 // check the last commit changes
