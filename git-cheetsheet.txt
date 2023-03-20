@@ -63,12 +63,14 @@ git log --graph --oneline --all // show different commit and position in the tre
 
 MERGE BRANCH TO MASTER BRANCH // get linear commit
 
-1. git checkout branch
+1. git checkout <branch>
 
 2. git rebase master
 
 3. git checkout master
 
-4. git merge branch
+4. git merge <branch>
 
-git push --delete origin branch // delete remote branch
+git push --delete origin <branch> // delete remote branch
+
+git branch -d <branch>
