@@ -11,8 +11,8 @@ PROBLEM SOLVING STEP
 
 1. gathering information
 2. finding root cause
-3. Long term remediation
-4. documentation
+3. documentation
+4. Long term remediation
 
 strace <./ap.py> // trace application systemcall - systemcall is the command application call to the kernel
 
