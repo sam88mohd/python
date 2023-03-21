@@ -74,3 +74,7 @@ MERGE BRANCH TO MASTER BRANCH // move current branch on top of branch
 git push --delete origin <branch> // delete remote branch
 
 git branch -d <branch>
+
+git push -f // if using to submit pull request // dont use in public repo
+
+git commit -a --ammend // make changes t previous commit // return new commit with new commit ID // use with push -f
