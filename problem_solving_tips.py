@@ -17,4 +17,15 @@ PROBLEM SOLVING STEP
 strace <./ap.py> // trace application systemcall - systemcall is the command application call to the kernel
 
 strace -o file.strace ./ap/py // store the stdout in a file
+ltrace
+
 less file.strace // shift-g to go to end of file
+
+where to find log:
+    linux:
+        var/log/syslog
+        .xsession-errors
+    mac:
+        Library/Logs
+    windows:
+        Event Viewer
