@@ -44,3 +44,9 @@ rsync - backup software - us bwlimit to limit bw used
 Trickle - set bw limit
 
 nice - reduce priority of process using CPU
+
+head -20 // print first 20 line
+
+tail -5 // print last 5 line
+
+wc -l <file>// print how many line for the file
