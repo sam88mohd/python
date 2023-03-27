@@ -50,3 +50,5 @@ head -20 // print first 20 line
 tail -5 // print last 5 line
 
 wc -l <file>// print how many line for the file
+
+expensive loop - avoid doing expensive operaton in a loop
