@@ -16,7 +16,7 @@ PROBLEM SOLVING STEP
 
 strace <./ap.py> // trace application systemcall - systemcall is the command application call to the kernel
 
-strace -o file.strace ./ap/py // store the stdout in a file
+strace -o file.strace ./ap.py // store the stdout in a file
 ltrace
 
 less file.strace // shift-g to go to end of file
@@ -52,3 +52,43 @@ tail -5 // print last 5 line
 wc -l <file>// print how many line for the file
 
 expensive loop - avoid doing expensive operaton in a loop
+
+resource:
+ disk
+ cpu
+ io
+ network
+
+time of application accessing data depends on the data location.
+
+if it is a variable use in a function, it will in cpu internal memory
+if the data is related to a program but not in the current function running, it will in ram
+if a data is a file, it will in hdd
+
+cache: a form of storing the data for faster processing - cached in memory
+web proxy is a cache: store website, images so it will not download everytime
+
+possible way for slow:
+1 not enough ram
+2 to many open application
+3 memory leak - memory which is no longer needed is not getting released
+
+cProfile - count functions call
+
+troubleshoot code:
+use time <script> // calculate time to run the script
+use pprofile3 -f callgrind -o profile.out <script> // store the output of the pprofile3
+use kcachegrind profile.out // read the file generated
+
+Threading / AsyncIO module
+
+psutil
+
+psutil.cpu_percent()
+psutil.disk_io_counters()
+psutil.net_io_counters()
+
+multiprocessing module
+from multiprocessing import Pool
+pool = Pool()
+pool.map(function, list)
