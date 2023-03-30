@@ -21,6 +21,8 @@ ltrace
 
 less file.strace // shift-g to go to end of file
 
+windows - proccess monitor // same as strace
+
 where to find log:
     linux:
         var/log/syslog
@@ -92,3 +94,8 @@ multiprocessing module
 from multiprocessing import Pool
 pool = Pool()
 pool.map(function, list)
+
+CRASHING application
+
+valgrind - powerful tool that can tell if the code doing any invalid operation - linux and mac
+dr. memory - same as valgrind - for windows and linux
