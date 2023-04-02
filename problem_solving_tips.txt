@@ -99,3 +99,25 @@ CRASHING application
 
 valgrind - powerful tool that can tell if the code doing any invalid operation - linux and mac
 dr. memory - same as valgrind - for windows and linux
+
+handling error:
+1. use pdb in python3
+2. printf debugging - technic of adding print to code to show the function of the code for debugging
+3. logging moddule - enable and disable logging status
+
+debugging segmentation fault:
+1. create core file: ulimit -c unlimited
+2. run the code again
+3. ls -l core
+4. gdb -c core <code filename>
+5. use backtrace
+6. up
+7. list
+8. print i
+9. print argv[0], print argv[1]
+
+debugging python:
+1. pdb3 <python script>
+2. use next to run line by line
+3. use continue to run until error occured
+4. print(row)
