@@ -121,3 +121,8 @@ debugging python:
 2. use next to run line by line
 3. use continue to run until error occured
 4. print(row)
+
+handling complex system:
+- must have logging
+- must have good monitoring system
+- must use vcs
