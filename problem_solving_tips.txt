@@ -126,3 +126,13 @@ handling complex system:
 - must have logging
 - must have good monitoring system
 - must use vcs
+
+DEBUGGING MEMORY LEAK
+1. use memory profiler - c,c++, use valgrind
+2. for python - use memory_profiler
+
+network saturation:
+iftop
+
+dealing with memory leak:
+
