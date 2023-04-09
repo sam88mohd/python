@@ -11,8 +11,32 @@ vcs
 4. let us easily check out the state of our infrastructure by looking
 at the rules that are commited.
 
-example of configuration management system:
+- example of configuration management system:
 1. puppet
 2. chef
 3. ansible
 4 cfengine
+
+puppet
+------
+
+- typicaly deploy puppet using a client-server architecture
+
+- client: puppet agent
+- server: puppet master
+
+- agent connect to the master and sends bunch of facts that describe
+the computer to the master
+
+- master the proccess this info, generate the list of rules that need to be
+applied to the device and send this list back to the agent
+
+- agent is then in charge to making anu neccessary changes on the computer.
+
+- puppet will determine the type of os being use and select the right tool
+to perform the package installation.
+
+- for linux, use apt, yum , dnf
+- for mac - Apple Provider is used for packages are part of the os
+            - MacPorts used package from MacPorts project
+- for windiws - need extra attributes, stating where is the installer located.
