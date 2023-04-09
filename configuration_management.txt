@@ -1,0 +1,18 @@
+- paradigm of storing all the configuration in vcs is known as infrastructure
+as a code (IAC).
+
+- since the configuration stored in files, those files can be stored in
+vcs
+
+- vcs gives us:
+1. audit trail of changes
+2. quickly rollback if a changes was wrong
+3. lets other review our code to catch error and distribute knowledge
+4. let us easily check out the state of our infrastructure by looking
+at the rules that are commited.
+
+example of configuration management system:
+1. puppet
+2. chef
+3. ansible
+4 cfengine
