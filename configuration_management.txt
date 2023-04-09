@@ -41,11 +41,33 @@ to perform the package installation.
             - MacPorts used package from MacPorts project
 - for windows - need extra attributes, stating where is the installer located.
 
-basic unit of puppet: resources - package, file 
+basic unit of puppet: resources - package, file, service 
 
 class sudo {
     package { 'sudo':
         ensure => present,
-        }
+    }
 }
+
+example of class
+-----------------
+
+class ntp {
+    package { 'ntp':
+        ensure => latest,
+    }
+    file {'/etc/ntp.conf':
+        source => 'puppet://modules/ntp/ntp.conf'
+        replace => true,
+    }
+    service { 'ntp':
+        enable => true,
+        ensure => running,
+    }
+}
+
+* 3 resources
+* grouped resources together in class
+* example, class grouping all resources related to managing log files, configuring
+time zone, handling temporary files and directories.
 
