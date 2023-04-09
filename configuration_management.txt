@@ -39,4 +39,13 @@ to perform the package installation.
 - for linux, use apt, yum , dnf
 - for mac - Apple Provider is used for packages are part of the os
             - MacPorts used package from MacPorts project
-- for windiws - need extra attributes, stating where is the installer located.
+- for windows - need extra attributes, stating where is the installer located.
+
+basic unit of puppet: resources - package, file 
+
+class sudo {
+    package { 'sudo':
+        ensure => present,
+        }
+}
+
