@@ -71,3 +71,14 @@ class ntp {
 * example, class grouping all resources related to managing log files, configuring
 time zone, handling temporary files and directories.
 
+fact - a variables representing characteristic in puppet
+
+if $facts['is_virtual] {
+    package { 'smartmontools':
+        ensure => purged,
+    }
+} else {
+    package { 'smartmontools':
+        ensure => installed,
+    }
+}
