@@ -82,3 +82,12 @@ if $facts['is_virtual] {
         ensure => installed,
     }
 }
+
+facts is a hash - same as dictionary in python - have key, value
+
+descriptive code - that mean it will always result in success
+
+exec { 'move example file':
+    command => ' mv /home/user/example.txt /home/user/Desktop,
+    onlyif => 'test -e /home/user/example/txt',
+}
