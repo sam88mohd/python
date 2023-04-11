@@ -91,3 +91,5 @@ exec { 'move example file':
     command => ' mv /home/user/example.txt /home/user/Desktop,
     onlyif => 'test -e /home/user/example/txt',
 }
+
+puppet is declarative language - it define the goal, not the step to achive the goal
