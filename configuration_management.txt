@@ -118,8 +118,8 @@ class ntp {
         ensure => latest,
     }
 
-    file { '/etc/ntp.conf':
-        source => '/home/user/ntp.conf',
+    file { '/etc/ntp.conf': # location of original file
+        source => '/home/user/ntp.conf', # location of file to replace
         replace => true,
         require => Package['ntp'],
         notify => Service['ntp'],
