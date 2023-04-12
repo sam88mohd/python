@@ -97,3 +97,39 @@ puppet is declarative language - it define the goal, not the step to achive the 
 add path - export PATH=/bin:/usr/bin
 
 append path to environment variable $PATH - PATH=$PATH:/java/bin\n 
+
+puppet dir:
+cd /etc/puppet/code/environments/production/modules/profile/manifests
+
+init.pp 
+
+installing puppet locally:
+
+1. sudo apt install puppet-master
+
+2. create puppet file (manifest) - ends with .pp 
+
+3. apply the manifest - sudo puppet apply -v <file.pp>
+
+managing resource relationship:
+
+class ntp {
+    package {'ntp':
+        ensure => latest,
+    }
+
+    file { '/etc/ntp.conf':
+        source => '/home/user/ntp.conf',
+        replace => true,
+        require => Package['ntp'],
+        notify => Service['ntp'],
+    }
+
+    service { 'ntp':
+        enable => true,
+        ensure => running,
+        require => File['etc/ntp.conf'],
+    }
+}
+
+include ntp # call the ntp class
