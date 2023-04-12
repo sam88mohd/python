@@ -93,3 +93,7 @@ exec { 'move example file':
 }
 
 puppet is declarative language - it define the goal, not the step to achive the goal
+
+add path - export PATH=/bin:/usr/bin
+
+append path to environment variable $PATH - PATH=$PATH:/java/bin\n 
