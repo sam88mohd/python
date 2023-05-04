@@ -12,6 +12,8 @@ git diff <file>
 
 git log
 
+git remote add origin git@github // add to github
+
 git push origin main
 
 git status
