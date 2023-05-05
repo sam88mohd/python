@@ -36,7 +36,8 @@ git add -p // allow user to interactively review code before commit
 
 git mv
 
-git rm
+git rm --cached <file> // remove file only in git (without --cached, file in system
+	will be deleted also)
 
 git reset // unstaged commit
 
